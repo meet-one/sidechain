@@ -23,4 +23,4 @@ git submodule update --init --recursive
 ### Step 4. Start the node
 
 
-## For EOS Developers (https://developers.eos.io)[https://developers.eos.io]
+## For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
