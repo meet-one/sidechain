@@ -43,3 +43,15 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 
 
 ## For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
+
+### Create new account
+
+```
+http://35.221.207.136:6677/newaccount?name=testnet115.m
+```
+
+#### The new account will have 1000 MEETONE token, you can get 1000 more if you want.
+
+```
+http://35.221.207.136:6677/get_token?name=testnet115.m
+```
