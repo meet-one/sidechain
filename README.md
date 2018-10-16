@@ -4,6 +4,32 @@ Private key: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 
 Public key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
+## P2P LIST
+
+```
+p2p-peer-address = testnet.meet.one:9876
+```
+
+## BNET LIST
+
+```
+bnet-connect = testnet.meet.one:4321
+```
+
+## HTTPS API LIST
+
+```
+https://api-testnet.meet.one/chain/v1/get_info
+```
+
+## Chain info
+
+```
+{
+  "chain_id": "9b21092f2e09cffdb32ffe513a358942d76733ff611fabd9847fcb64ece5c927"
+}
+```
+
 
 ## For Block Producers: Join blockchain network to producing
 
@@ -32,7 +58,9 @@ http://35.221.207.136:6677/newaccount?name=testnet115.m
  
 #### 2. replace producer-name to your producer name 
  
-#### 3. replace signature-provider to your producer public key and private key
+#### 3. replace signature-provider to your produce public key and private key
+
+#### 4. add p2p/peer node
 
 
 ### Step 4. Launch the node
