@@ -11,6 +11,7 @@ Public key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 ```
 1. Core system symbol: MEETONE
+2. Total supply: 10000000000.0000
 ```
 
 ## P2P LIST
