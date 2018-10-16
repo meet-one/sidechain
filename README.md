@@ -21,7 +21,7 @@ bnet-connect = testnet.meet.one:4321
 ## HTTPS API LIST
 
 ```
-https://api-testnet.meet.one/chain/v1/get_info
+https://api-testnet.meet.one/v1/chain/get_info
 ```
 
 ## Chain info
