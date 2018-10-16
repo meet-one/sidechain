@@ -56,14 +56,12 @@ http://35.221.207.136:6677/newaccount?name=testnet115.m
 
 ### Step 3. Configure the initial set of nodeos
 
-#### 1. open your config.ini
- 
-#### 2. replace producer-name to your producer name 
- 
-#### 3. replace signature-provider to your produce public key and private key
-
-#### 4. add p2p/peer node
-
+```
+1. open your config.ini 
+2. replace producer-name to your producer name 
+3. replace signature-provider to your produce public key and private key
+4. add p2p/peer node
+```
 
 ### Step 4. Launch the node
 
