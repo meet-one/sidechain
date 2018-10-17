@@ -7,26 +7,26 @@ Private key: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 Public key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 
-## Basic Info
+## Basic info
 
 ```
 1. Core system symbol: MEETONE
 2. Total supply: 10000000000.0000
 ```
 
-## P2P LIST
+## P2P list
 
 ```
 p2p-peer-address = testnet.meet.one:9876
 ```
 
-## BNET LIST
+## BNET list
 
 ```
 bnet-connect = testnet.meet.one:4321
 ```
 
-## HTTPS API LIST
+## HTTPS API list
 
 ```
 http://testnet.meet.one:8888/v1/chain/get_info
