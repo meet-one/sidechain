@@ -77,6 +77,14 @@ http://35.221.207.136:6677/newaccount?name=testnet115.m
 nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer-node/config-dir --genesis-json ./nodeos/producer-node/config-dir/genesis.json
 ```
 
+### Step 5. Register block producer info
+
+```
+cleos system regproducer meetone111.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN http://meet.one 702
+```
+
+### Step 6. Get vote.
+
 
 ## For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
 
