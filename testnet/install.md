@@ -8,3 +8,4 @@ git submodule update --init --recursive
 
 ./eosio_build.sh -s MEETONE
 
+sudo ./eosio_install.sh
