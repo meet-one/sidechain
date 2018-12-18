@@ -3,7 +3,7 @@ cleos set contract eosio.token ./ eosio.token.wasm eosio.token.abi -p eosio.toke
 cleos push action eosio.token create '[ "eosio", "10000000000.0000 MEETONE"]' -p eosio.token@active
 cleos push action eosio.token issue '[ "eosio", "10000000000.0000 MEETONE", "memo" ]' -p eosio@active
 cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "10000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "m", "900000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "m", "9990000000.0000 MEETONE", "" ]' -p eosio@active
 cleos get currency balance eosio.token eosio
 cleos get currency balance eosio.token eosio.faucet
 
@@ -18,4 +18,4 @@ cleos push action eosio setpriv '["eosio.msig", 1]' -p eosio@active
 
 cleos set contract eosio.bios ./ eosio.bios.wasm eosio.bios.abi -p eosio.bios@active
 cleos push action eosio setpriv '["eosio.bios", 1]' -p eosio@active
-cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetonetest1", "block_signing_key":"EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"},{"producer_name":"meetonetest2", "block_signing_key":"EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"},,{"producer_name":"meetonetest3", "block_signing_key":"EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"},{"producer_name":"meetonetest4", "block_signing_key":"EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"},{"producer_name":"meetonetest5", "block_signing_key":"EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"}]}' -p eosio.bios@active
+cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetonetest1", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest2", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},,{"producer_name":"meetonetest3", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest4", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest5", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"}]}' -p eosio.bios@active

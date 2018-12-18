@@ -45,6 +45,7 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 ```
 git clone https://github.com/meet-one/eos.git
 cd eos
+git checkout tags/v1.5.1
 git submodule update --init --recursive
 ./eosio_build.sh -s MEETONE
 cd build
@@ -82,13 +83,13 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 #### Create new account
 
 ```
-http://35.236.182.224:6677/newaccount?name=testnet11111
+http://35.236.182.224:6677/newaccount?name=testnet111.m
 ```
 
 #### The new account will have 1000 MEETONE token, you can get 1000 more if you want.
 
 ```
-http://35.236.182.224:6677/get_token?name=testnet11111
+http://35.236.182.224:6677/get_token?name=testnet111.m
 ```
 
 
