@@ -79,7 +79,7 @@ p2p-peer-address = sidechain-test.meet.one:9876
 ```
 
 
-### HTTPS API list
+### HTTP API list
 
 ```
 http://sidechain-test.meet.one:8888/v1/chain/get_info
@@ -89,7 +89,7 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 
 ```
 {
-  "chain_id": "399836e9894b222eb95063a5442069882e40abec832b89d8e3b4f4456de2bb7d"
+  "chain_id": "7136e3e32a458bb99cf6973ab5055869d25830607b9e78593769e1be52fb6f20"
 }
 ```
 

@@ -71,6 +71,7 @@ cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 # create accounts of meetone team
 
 cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos push action eosio.token transfer '[ "eosio", "m", "100000000.0000 MEETONE", "" ]' -p eosio@active
 cleos system newaccount m bank.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m meetone.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m foundation.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
@@ -79,14 +80,14 @@ cleos system newaccount m foundation.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNT
 # transfer token from eosio to m & faucet
 
 cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "100000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "bank.m", "7300000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "m", "100000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token delegatebw '[ "eosio", "meetone.m", "1250000000.0000 MEETONE", "1250000000.0000 MEETONE", 1 ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "bank.m", "7299999790.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio delegatebw '[ "eosio", "meetone.m", "1250000000.0000 MEETONE", "1250000000.0000 MEETONE", 1 ]' -p eosio@active
 cleos get currency balance eosio.token eosio
 cleos get currency balance eosio.token eosio.faucet
 cleos get currency balance eosio.token m
 cleos get currency balance eosio.token bank.m
 cleos get currency balance eosio.token meetone.m
+cleos get currency balance eosio.token foundation.m
 
 
 
