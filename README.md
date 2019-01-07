@@ -54,6 +54,8 @@ MEET.ONE Wallet APP.
 
 ## Governance
 
+MEET.ONE foundation.
+
 ## Testnet
 
 #### These are test only keys and should never be used for the production blockchain. 
