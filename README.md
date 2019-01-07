@@ -146,10 +146,3 @@ http://35.236.182.224:6677/newaccount?name=testnet111.m
 ```
 http://35.236.182.224:6677/get_token?name=testnet111.m
 ```
-
-
-## 接入 MEET.ONE 钱包
-
-[EOS 生态可能因此大爆发,使用门槛被极大降低](https://mp.weixin.qq.com/s/4m0ZhJP1itlhH3rabYhcAg)
-
-[别看了，这篇是写给 EOS 应用开发者的](https://mp.weixin.qq.com/s/vZhJGP-0grJHLCOsljhZSA)
