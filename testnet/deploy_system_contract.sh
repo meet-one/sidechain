@@ -36,20 +36,22 @@ cleos create account eosio eosio.faucet EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrN
 # deploy token contract
 
 cleos set contract eosio.token /home/ubuntu/eosio.contracts/build/eosio.token eosio.token.wasm eosio.token.abi -p eosio.token@active
-cleos push action eosio.token create '[ "eosio", "100000000000.0000 MEETONE"]' -p eosio.token@active
+cleos push action eosio.token create '[ "eosio", "10000000000.0000 MEETONE"]' -p eosio.token@active
 cleos push action eosio.token issue '[ "eosio", "10000000000.0000 MEETONE", "memo" ]' -p eosio@active
 
 
 # deploy system contract
 
 cleos set contract eosio /home/ubuntu/eosio.contracts/build/eosio.system eosio.system.wasm eosio.system.abi -p eosio@active
-cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
+cleos push action eosio setpriv '["eosio", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
+
 
 # deploy msig contract
 
 cleos set contract eosio.msig /home/ubuntu/eosio.contracts/build/eosio.msig eosio.msig.wasm eosio.msig.abi -p eosio.msig@active
 cleos push action eosio setpriv '["eosio.msig", 1]' -p eosio@active
+
 
 # deploy bios contract
 
@@ -57,29 +59,40 @@ cleos set contract eosio.bios /home/ubuntu/eosio.contracts/build/eosio.bios eosi
 cleos push action eosio setpriv '["eosio.bios", 1]' -p eosio@active
 
 
+# deploy wrap contract
+
+cleos set contract eosio.wrap /home/ubuntu/eosio.contracts/build/eosio.wrap eosio.wrap.wasm eosio.wrap.abi -p eosio.wrap@active
+cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 
 
 
 
 
-# create account m
+# create accounts of meetone team
 
-cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m bank.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m meetone.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m foundation.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+
 
 # transfer token from eosio to m & faucet
 
-cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "10000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "m", "9989999970.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "100000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "bank.m", "7300000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "m", "100000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token delegatebw '[ "eosio", "meetone.m", "1250000000.0000 MEETONE", "1250000000.0000 MEETONE", 1 ]' -p eosio@active
 cleos get currency balance eosio.token eosio
 cleos get currency balance eosio.token eosio.faucet
 cleos get currency balance eosio.token m
+cleos get currency balance eosio.token bank.m
+cleos get currency balance eosio.token meetone.m
 
 
 
 
 
-
-# create testnet block producer account
+# create testnet account
 
 cleos system newaccount m meetone1.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m meetone2.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
@@ -100,7 +113,6 @@ cleos system regproducer meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUP
 # set producers
 
 cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetone1.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone2.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},,{"producer_name":"meetone3.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone4.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone5.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"}]}' -p eosio.bios@active
-
 
 
 
