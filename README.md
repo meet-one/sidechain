@@ -69,7 +69,7 @@ Private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 ```
 1. Core system symbol: MEETONE
-2. Total supply: 10000000000.0000
+2. Total supply: 10,000,000,000.0000
 ```
 
 ### P2P list
@@ -85,7 +85,7 @@ p2p-peer-address = sidechain-test.meet.one:9876
 http://sidechain-test.meet.one:8888/v1/chain/get_info
 ```
 
-### Chain info
+### Chain id
 
 ```
 {
@@ -94,7 +94,7 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 ```
 
 
-### For Block Producers: Join blockchain network to producing
+### Join testnet blockchain network
 
 Testnet machine: 4 CPU, 16GB RAM
 
@@ -143,7 +143,7 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 http://35.236.182.224:6677/newaccount?name=testnet111.m
 ```
 
-#### The new account will have 1000 MEETONE token, you can get 1000 more if you want.
+#### Get 1000 MEETONE.
 
 ```
 http://35.236.182.224:6677/get_token?name=testnet111.m
