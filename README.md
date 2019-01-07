@@ -96,9 +96,11 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 
 ### Join testnet blockchain network
 
-Testnet machine: 4 CPU, 16GB RAM
 [config.ini](https://github.com/meet-one/sidechain/blob/master/testnet/nodeos/producer-node/config-dir/config.ini)
+
 [genesis.json](https://github.com/meet-one/sidechain/blob/master/testnet/nodeos/producer-node/config-dir/genesis.json)
+
+Testnet machine: 4 CPU, 16GB RAM
 
 #### Step 1. Install
 ```
