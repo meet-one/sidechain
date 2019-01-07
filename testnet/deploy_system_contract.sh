@@ -1,21 +1,117 @@
+# launch testnet nodeos
 
-cleos set contract eosio.token ./ eosio.token.wasm eosio.token.abi -p eosio.token@active
-cleos push action eosio.token create '[ "eosio", "10000000000.0000 MEETONE"]' -p eosio.token@active
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/eosio/config-dir --data-dir /home/ubuntu/nodeos/eosio/data-dir --genesis-json /home/ubuntu/nodeos/eosio/config-dir/genesis.json > log-eosio.log 2>&1 &
+
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone1.m/config-dir --data-dir /home/ubuntu/nodeos/meetone1.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone1.m/config-dir/genesis.json > log-1.log 2>&1 &
+
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone2.m/config-dir --data-dir /home/ubuntu/nodeos/meetone2.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone2.m/config-dir/genesis.json > log-2.log 2>&1 &
+
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone3.m/config-dir --data-dir /home/ubuntu/nodeos/meetone3.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone3.m/config-dir/genesis.json > log-3.log 2>&1 &
+
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone4.m/config-dir --data-dir /home/ubuntu/nodeos/meetone4.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone4.m/config-dir/genesis.json > log-4.log 2>&1 &
+
+nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone5.m/config-dir --data-dir /home/ubuntu/nodeos/meetone5.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone5.m/config-dir/genesis.json > log-5.log 2>&1 &
+
+
+
+
+
+# create system account
+
+cleos create account eosio eosio.bpay EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.vpay EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.msig EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.ram EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.ramfee EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.stake EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.token EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.wrap EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.bios EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.faucet EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+
+
+
+
+
+# deploy token contract
+
+cleos set contract eosio.token /home/ubuntu/eosio.contracts/build/eosio.token eosio.token.wasm eosio.token.abi -p eosio.token@active
+cleos push action eosio.token create '[ "eosio", "100000000000.0000 MEETONE"]' -p eosio.token@active
 cleos push action eosio.token issue '[ "eosio", "10000000000.0000 MEETONE", "memo" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "10000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "m", "9990000000.0000 MEETONE", "" ]' -p eosio@active
-cleos get currency balance eosio.token eosio
-cleos get currency balance eosio.token eosio.faucet
 
 
-cleos set contract eosio ./ eosio.system.wasm eosio.system.abi -p eosio@active
+# deploy system contract
+
+cleos set contract eosio /home/ubuntu/eosio.contracts/build/eosio.system eosio.system.wasm eosio.system.abi -p eosio@active
 cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
 
-cleos set contract eosio.msig ./ eosio.msig.wasm eosio.msig.abi -p eosio.msig@active
+# deploy msig contract
+
+cleos set contract eosio.msig /home/ubuntu/eosio.contracts/build/eosio.msig eosio.msig.wasm eosio.msig.abi -p eosio.msig@active
 cleos push action eosio setpriv '["eosio.msig", 1]' -p eosio@active
 
+# deploy bios contract
 
-cleos set contract eosio.bios ./ eosio.bios.wasm eosio.bios.abi -p eosio.bios@active
+cleos set contract eosio.bios /home/ubuntu/eosio.contracts/build/eosio.bios eosio.bios.wasm eosio.bios.abi -p eosio.bios@active
 cleos push action eosio setpriv '["eosio.bios", 1]' -p eosio@active
-cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetonetest1", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest2", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},,{"producer_name":"meetonetest3", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest4", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetonetest5", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"}]}' -p eosio.bios@active
+
+
+
+
+
+
+
+# create account m
+
+cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+
+# transfer token from eosio to m & faucet
+
+cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "10000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "m", "9989999970.0000 MEETONE", "" ]' -p eosio@active
+cleos get currency balance eosio.token eosio
+cleos get currency balance eosio.token eosio.faucet
+cleos get currency balance eosio.token m
+
+
+
+
+
+
+# create testnet block producer account
+
+cleos system newaccount m meetone1.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m meetone2.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m meetone3.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m meetone4.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos system newaccount m meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+
+
+# register block producer
+
+cleos system regproducer meetone1.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+cleos system regproducer meetone2.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+cleos system regproducer meetone3.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+cleos system regproducer meetone4.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+cleos system regproducer meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+
+
+# set producers
+
+cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetone1.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone2.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},,{"producer_name":"meetone3.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone4.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone5.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"}]}' -p eosio.bios@active
+
+
+
+
+
+
+# resign
+
+controller="eosio.prods"
+
+for account in 'eosio' 'eosio.bpay' 'eosio.vpay' 'eosio.msig' 'eosio.names' 'eosio.ram' 'eosio.ramfee' 'eosio.saving' 'eosio.stake' 'eosio.token' 'eosio.wrap' 'eosio.bios'
+do
+    cleos push action eosio updateauth '{"account": "'$account'", "permission": "owner",  "parent": "",  "auth": { "threshold": 1, "keys": [], "waits": [], "accounts": [{ "weight": 1, "permission": {"actor": "'$controller'", "permission": "active"} }] } } ' -p $account@owner
+    cleos push action eosio updateauth '{"account": "'$account'", "permission": "active",  "parent": "owner",  "auth": { "threshold": 1, "keys": [], "waits": [], "accounts": [{ "weight": 1, "permission": {"actor": "'$controller'", "permission": "active"} }] } }' -p $account@active
+done

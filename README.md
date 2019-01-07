@@ -1,5 +1,59 @@
 # MEET.ONE Sidechain 
 
+## Initial accounts
+
+```
+eosio
+eosio.token
+eosio.msig
+eosio.ram
+eosio.ramfee
+eosio.stake
+eosio.bpay
+eosio.vpay
+eosio.wrap
+eosio.bios
+m
+meetone.m
+bank.m
+foundation.m
+```
+
+## Initial contracts
+
+```
+eosio.system
+eosio.token
+eosio.msig
+eosio.wrap
+eosio.bios
+bank.m
+```
+
+## 21 block producers
+
+```
+MEET.ONE
+```
+
+## Snapshot
+
+get synced to the network within a minute.
+
+## Monitor
+
+Sidechain monitoring tool.
+
+## Browser
+
+Sidechain browser.
+
+## Wallet
+
+MEET.ONE Wallet APP.
+
+## Governance
+
 ## Testnet
 
 #### These are test only keys and should never be used for the production blockchain. 
@@ -40,12 +94,13 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 
 ### For Block Producers: Join blockchain network to producing
 
+Testnet machine: 4 CPU, 16GB RAM
 
 #### Step 1. Install
 ```
 git clone https://github.com/meet-one/eos.git
 cd eos
-git checkout tags/v1.5.1
+git checkout tags/v1.5.3
 git submodule update --init --recursive
 ./eosio_build.sh -s MEETONE
 cd build
