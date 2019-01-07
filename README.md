@@ -30,7 +30,7 @@ eosio.bios
 bank.m
 ```
 
-## 21 block producers
+## Block producer candidate
 
 ```
 MEET.ONE
