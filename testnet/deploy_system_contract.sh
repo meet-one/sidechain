@@ -13,9 +13,6 @@ nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone4.m/co
 nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/meetone5.m/config-dir --data-dir /home/ubuntu/nodeos/meetone5.m/data-dir --genesis-json /home/ubuntu/nodeos/meetone5.m/config-dir/genesis.json > log-5.log 2>&1 &
 
 
-
-
-
 # create system account
 
 cleos create account eosio eosio.bpay EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
@@ -28,9 +25,6 @@ cleos create account eosio eosio.token EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNT
 cleos create account eosio eosio.wrap EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.bios EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.faucet EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
-
-
-
 
 
 # deploy token contract
@@ -65,9 +59,6 @@ cleos set contract eosio.wrap /home/ubuntu/eosio.contracts/build/eosio.wrap eosi
 cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 
 
-
-
-
 # create accounts of meetone team
 
 cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
@@ -88,9 +79,6 @@ cleos get currency balance eosio.token m
 cleos get currency balance eosio.token bank.m
 cleos get currency balance eosio.token meetone.m
 cleos get currency balance eosio.token foundation.m
-
-
-
 
 
 # create testnet account
@@ -116,14 +104,11 @@ cleos system regproducer meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUP
 cleos push action eosio.bios setprods '{"schedule": [{"producer_name": "meetone1.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone2.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},,{"producer_name":"meetone3.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone4.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"},{"producer_name":"meetone5.m", "block_signing_key":"EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN"}]}' -p eosio.bios@active
 
 
-
-
-
 # resign
 
 controller="eosio.prods"
 
-for account in 'eosio' 'eosio.bpay' 'eosio.vpay' 'eosio.msig' 'eosio.names' 'eosio.ram' 'eosio.ramfee' 'eosio.saving' 'eosio.stake' 'eosio.token' 'eosio.wrap' 'eosio.bios'
+for account in 'eosio' 'eosio.bpay' 'eosio.vpay' 'eosio.msig' 'eosio.ram' 'eosio.ramfee' 'eosio.stake' 'eosio.token' 'eosio.wrap' 'eosio.bios'
 do
     cleos push action eosio updateauth '{"account": "'$account'", "permission": "owner",  "parent": "",  "auth": { "threshold": 1, "keys": [], "waits": [], "accounts": [{ "weight": 1, "permission": {"actor": "'$controller'", "permission": "active"} }] } } ' -p $account@owner
     cleos push action eosio updateauth '{"account": "'$account'", "permission": "active",  "parent": "owner",  "auth": { "threshold": 1, "keys": [], "waits": [], "accounts": [{ "weight": 1, "permission": {"actor": "'$controller'", "permission": "active"} }] } }' -p $account@active
