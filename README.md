@@ -91,7 +91,7 @@ http://sidechain-test.meet.one:8888/v1/chain/get_info
 ```
 
 
-### Join testnet blockchain network
+### Join test blockchain network
 
 [config.ini](https://github.com/meet-one/sidechain/blob/master/testnet/nodeos/producer-node/config-dir/config.ini)
 
