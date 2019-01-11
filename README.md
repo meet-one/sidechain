@@ -52,9 +52,6 @@ Sidechain browser.
 
 MEET.ONE Wallet APP.
 
-## Governance
-
-MEET.ONE foundation.
 
 ## Testnet
 
