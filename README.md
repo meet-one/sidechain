@@ -73,6 +73,7 @@ Private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 ```
 p2p-peer-address = sidechain-test.meet.one:9876
+p2p-peer-address = sidechain-test2.meet.one:9876
 ```
 
 
@@ -80,6 +81,7 @@ p2p-peer-address = sidechain-test.meet.one:9876
 
 ```
 http://sidechain-test.meet.one:8888/v1/chain/get_info
+http://sidechain-test2.meet.one:8888/v1/chain/get_info
 ```
 
 ### Chain id
