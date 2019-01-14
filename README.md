@@ -4,7 +4,7 @@ Telegram: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/G
 
 ## Testnet
 
-## Initial accounts
+### Initial accounts
 
 ```
 eosio
@@ -23,7 +23,7 @@ bank.m
 foundation.m
 ```
 
-## Initial contracts
+### Initial contracts
 
 ```
 eosio.system
@@ -35,19 +35,19 @@ bank.m
 ```
 
 
-## Snapshot
+### Snapshot
 
 Get synced to the network within a minute.
 
-## Monitor
+### Monitor
 
 Sidechain monitoring tool.
 
-## Browser
+### Browser
 
 Sidechain browser.
 
-## Wallet
+### Wallet
 
 MEET.ONE Wallet APP.
 
