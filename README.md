@@ -32,13 +32,6 @@ eosio.bios
 bank.m
 ```
 
-## Block producer candidate
-
-```
-EOS Nation
-EOS Park
-MEET.ONE
-```
 
 ## Snapshot
 
