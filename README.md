@@ -33,8 +33,8 @@ bank.m
 ## Block producer candidate
 
 ```
-MEET.ONE
 EOSPark
+MEET.ONE
 ```
 
 ## Snapshot
