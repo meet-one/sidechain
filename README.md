@@ -1,5 +1,7 @@
 # MEET.ONE Sidechain 
 
+Telegram: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
+
 ## Initial accounts
 
 ```
@@ -151,6 +153,7 @@ http://35.236.182.224:6677/newaccount?name=testnet115.m
 nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer-node/config-dir --genesis-json ./nodeos/producer-node/config-dir/genesis.json
 ```
 
+#### Step 5. Get vote.
 
 ### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
 
