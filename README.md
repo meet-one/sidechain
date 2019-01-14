@@ -2,6 +2,8 @@
 
 Telegram: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
+## Testnet
+
 ## Initial accounts
 
 ```
@@ -49,8 +51,6 @@ Sidechain browser.
 
 MEET.ONE Wallet APP.
 
-
-## Testnet
 
 #### These are test only keys and should never be used for the production blockchain. 
 
