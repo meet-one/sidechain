@@ -1,6 +1,7 @@
 # MEET.ONE Sidechain 
 
 [中文版技术白皮书](./technical-white-paper-CN.md)
+
 Telegram: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
 ## Testnet
