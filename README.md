@@ -33,8 +33,8 @@ bank.m
 ## Block producer candidate
 
 ```
-EOSNation
-EOSPark
+EOS Nation
+EOS Park
 MEET.ONE
 ```
 
