@@ -4,7 +4,7 @@
 
 MEET.ONE 团队在 DAPP 智能合约开发、钱包开发、节点部署等多个方向积累了丰富的行业与技术经验。MEET.ONE 侧链宗旨在于扩充 EOS 生态，降低 EOS 使用门槛和成本，同时赋能侧链 DApp 访问主网资源。
 
-![image](https://uploader.shimo.im/f/bScexrmg8KgSa8SC.jpeg)
+![image](./assets/MEET.ONE-Sidechain.001.jpeg)
 
 
 ###  1.1 金融
@@ -115,8 +115,11 @@ EOSJS 是侧链的 JavaScript 开发工具包，支持 nodejs 与浏览器前端
 ####  3.3.2 数据存储
 
 智能合约在执行前，EOSIO 都会为其配置独立的工作空间，开发人员要在合约操作之间传递相关状态，需要持久化数据存储，从 EOSIO 数据库中进行数据查询。
+
 EOSIO 多索引 API：Multi_index 为 EOSIO 数据库提供 C++ 接口。
+
 EOSIO 多索引迭代器：多索引表中对象数据的查询。
+
 作为合约开发人员需要为数据存储的运行成本买单，不应该强制用户因为使用了合约而直接为合约支付存储费用。
 
 ####  3.3.3 节点 API
@@ -124,7 +127,9 @@ EOSIO 多索引迭代器：多索引表中对象数据的查询。
 侧链超级节点将会为开发者、钱包提供全球范围内的节点服务，包括 API Node、History Node、Peer Node。
 
 API Node: 支持发送交易，查询账户，查询合约数据库等操作。
+
 History Node: 支持查询账户交易记录，合约历史记录等操作。
+
 Peer Node: 用于节点之间的数据同步。
 
 
@@ -165,7 +170,10 @@ EOS.IO 共识机制为 BTF+DPoS。
 在 DPOS（Delegated Proof-of-Stake）机制下每个 token 持有人参与选出可以代表自己利益的超级节点，排名前 21 的超级节点拥有出块权限，出块速度为 0.5 秒，每个超级节点连续生产 12 个区块后再切换下一个超级节点。
 
 aBFT（asynchronous Byzantine Fault Tolerance）机制让每一个区块被超级节点打包以后，都需要等待前 21 名超级节点中的至少  14个 (21 * 2 / 3 ) 节点两轮验证确认以后才会被标识为不可逆块，计算公式如下:
+
+```
 ( ( 21 * 2 / 3 ) * 12 ) * 2 / 2 = 168 (seconds)
+```
 
 ###  4.4 定时事务
 
