@@ -99,6 +99,12 @@ http://sidechain-test2.meet.one:8888/v1/chain/get_info
 
 [genesis.json](https://github.com/meet-one/sidechain/blob/master/testnet/nodeos/producer-node/config-dir/genesis.json)
 
+
+```
+wget https://raw.githubusercontent.com/meet-one/sidechain/master/testnet/nodeos/producer-node/config-dir/config.ini
+wget https://raw.githubusercontent.com/meet-one/sidechain/master/testnet/nodeos/producer-node/config-dir/genesis.json
+```
+
 Testnet machine: 4 CPU, 8GB RAM
 
 #### Step 1. Install
