@@ -21,6 +21,8 @@ m
 meetone.m
 bank.m
 foundation.m
+producer.m
+regproxy.m
 ```
 
 ### Initial contracts
@@ -50,13 +52,6 @@ Sidechain browser.
 ### Wallet
 
 MEET.ONE Wallet APP.
-
-
-#### These are test only keys and should never be used for the production blockchain. 
-
-Public key: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
-
-Private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 
 ### Basic info
@@ -96,7 +91,7 @@ http://sidechain-test-history.meet.one:8888/v1/chain/get_info
 ```
 
 
-### Join test blockchain network
+### Join sidechain testnet
 
 [config.ini](https://github.com/meet-one/sidechain/blob/master/testnet/nodeos/producer-node/config-dir/config.ini)
 
@@ -107,6 +102,12 @@ http://sidechain-test-history.meet.one:8888/v1/chain/get_info
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/testnet/nodeos/producer-node/config-dir/config.ini
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/testnet/nodeos/producer-node/config-dir/genesis.json
 ```
+
+#### These are test only keys and should never be used for the production blockchain. 
+
+Public key: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+
+Private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 Testnet machine: 4 CPU, 8GB RAM
 
@@ -134,10 +135,10 @@ http://35.236.182.224:6677/newaccount?name=testnet115.m
 #### Step 3. Configure the initial set of nodeos
 
 ```
-1. open your config.ini 
-2. replace producer-name to your producer name 
-3. replace signature-provider to your produce public key and private key
-4. add p2p/bnet node address
+1. open config.ini 
+2. replace producer-name to block producer name 
+3. replace signature-provider to produce public key and private key
+4. add p2p node address
 ```
 
 #### Step 4. Launch the node

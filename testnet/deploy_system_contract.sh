@@ -83,20 +83,20 @@ cleos get currency balance eosio.token foundation.m
 
 # create testnet account
 
-cleos system newaccount m meetone1.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos system newaccount m meetone2.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos system newaccount m meetone3.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos system newaccount m meetone4.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos system newaccount m meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+for account in 'meetone1.m' 'meetone2.m' 'meetone3.m' 'meetone4.m' 'meetone5.m' 'meetone11.m' 'meetone22.m' 'meetone33.m' 'meetone44.m' 'meetone55.m' 'meetonea.m' 'meetoneb.m' 'meetonec.m' 'meetoned.m' 'meetonee.m' 'meetonef.m' 'meetoneg.m' 'meetoneh.m' 'meetonei.m' 'meetonej.m' 'meetonek.m' 'meetonel.m' 'meetonem.m' 'meetonen.m' 'meetoneo.m' 'meetonep.m' 'meetoneq.m' 'meetoner.m' 'meetones.m' 'meetonet.m'
+do
+    cleos system newaccount m $account EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "10.0000 MEETONE" --stake-cpu "10.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+done
+
 
 
 # register block producer
 
-cleos system regproducer meetone1.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
-cleos system regproducer meetone2.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
-cleos system regproducer meetone3.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
-cleos system regproducer meetone4.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
-cleos system regproducer meetone5.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+for account in 'meetone1.m' 'meetone2.m' 'meetone3.m' 'meetone4.m' 'meetone5.m' 'meetone11.m' 'meetone22.m' 'meetone33.m' 'meetone44.m' 'meetone55.m' 'meetonea.m' 'meetoneb.m' 'meetonec.m' 'meetoned.m' 'meetonee.m' 'meetonef.m' 'meetoneg.m' 'meetoneh.m' 'meetonei.m' 'meetonej.m' 'meetonek.m' 'meetonel.m' 'meetonem.m' 'meetonen.m' 'meetoneo.m' 'meetonep.m' 'meetoneq.m' 'meetoner.m' 'meetones.m' 'meetonet.m'
+do
+    cleos system regproducer $account EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN https://meet.one 702
+done
+
 
 
 # set producers
