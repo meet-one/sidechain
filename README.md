@@ -23,7 +23,7 @@ m
 meetone.m
 bank.m
 foundation.m
-producer.m
+producers.m
 regproxy.m
 ```
 
@@ -36,6 +36,8 @@ eosio.msig
 eosio.wrap
 eosio.bios
 bank.m
+producers.m
+regproxy.m
 ```
 
 
