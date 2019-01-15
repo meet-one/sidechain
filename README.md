@@ -24,7 +24,7 @@ meetone.m
 bank.m
 foundation.m
 producers.m
-regproxy.m
+proxies.m
 ```
 
 ### Initial contracts
@@ -37,7 +37,7 @@ eosio.wrap
 eosio.bios
 bank.m
 producers.m
-regproxy.m
+proxies.m
 ```
 
 
@@ -158,11 +158,30 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 
 ### Register block producer info
 
-Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass was depolyed on producers.m
+Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass was depolyed to producers.m
+
+get bp list:
+```
+cleos -u http://sidechain-test.meet.one:8888 get table producers.m producers.m producerjson
+```
 
 submit bp info:
 ```
-cleos push action producers.m set '{"owner":"meetone1.m", "json": "{\"producer_account_name\":\"meetone1.m\",\"org\":{\"candidate_name\":\"MEET.ONE\",\"website\":\"https://meet.one\",\"ownership_disclosure\":\"https://steemit.com/eos/@meetone/meet-one-statement-of-ownership\",\"code_of_conduct\":\"https://steemit.com/eos/@meetone/revenue-distribution-of-meet-one\",\"email\":\"hello@meet.one\",\"branding\":{\"logo_256\":\"https://meet.one/meetone-256.png\",\"logo_1024\":\"https://meet.one/meetone-1024.png\",\"logo_svg\":\"https://meet.one/assets/MEET.svg\"},\"location\":{\"name\":\"Singapore\",\"country\":\"SG\",\"latitude\":1.29027,\"longitude\":103.851959},\"social\":{\"steemit\":\"meetone\",\"twitter\":\"MeetDotOne\",\"github\":\"meet-one\",\"telegram\":\"MeetOne\"}},\"nodes\":[{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"seed\",\"p2p_endpoint\":\"p2p.meet.one:9876\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"full\",\"api_endpoint\":\"http://mainnet.meet.one\",\"ssl_endpoint\":\"https://mainnet.meet.one\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"producer\"}]}"}' -p meetone1.m@active
+cleos -u http://sidechain-test.meet.one:8888 push action producers.m set '{"owner":"meetone1.m", "json": "{\"producer_account_name\":\"meetone1.m\",\"org\":{\"candidate_name\":\"MEET.ONE\",\"website\":\"https://meet.one\",\"ownership_disclosure\":\"https://steemit.com/eos/@meetone/meet-one-statement-of-ownership\",\"code_of_conduct\":\"https://steemit.com/eos/@meetone/revenue-distribution-of-meet-one\",\"email\":\"hello@meet.one\",\"branding\":{\"logo_256\":\"https://meet.one/meetone-256.png\",\"logo_1024\":\"https://meet.one/meetone-1024.png\",\"logo_svg\":\"https://meet.one/assets/MEET.svg\"},\"location\":{\"name\":\"Singapore\",\"country\":\"SG\",\"latitude\":1.29027,\"longitude\":103.851959},\"social\":{\"steemit\":\"meetone\",\"twitter\":\"MeetDotOne\",\"github\":\"meet-one\",\"telegram\":\"MeetOne\"}},\"nodes\":[{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"seed\",\"p2p_endpoint\":\"p2p.meet.one:9876\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"full\",\"api_endpoint\":\"http://mainnet.meet.one\",\"ssl_endpoint\":\"https://mainnet.meet.one\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"producer\"}]}"}' -p meetone1.m@active
+```
+
+### Register proxy info
+
+Opeonsource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS was depolyed to proxies.m
+
+submit proxy info:
+```
+cleos -u http://sidechain-test.meet.one:8888 push action proxies.m set '["proxy.m","MEET.ONE Proxy","MEET.ONE connecting users","Community Engagement,Technical Proficiency,Building Tools/Dapps for the Community,Education,Cooperation,Geographical location.","MEET.ONE is an EOS block producer candidate from Singapore. On June 15, 2018, MEET.ONE was successfully elected as one of genesis block producers.MEET.ONE is committed to the development of EOS ecology portal applications. In the past few months, MEET.ONE has offered the majority of the users outstanding EOS portal presentations to realize various functions of the EOS ecosystem. At the same time, we have established a huge EOS community and designed a series of incentive mechanisms to enable the community members to actively study, enlarge the EOS ecology and build a solid foundation of consent;In the future, we will initiate the MEET.ONE side chain, set up a foundation to screen and incubate outstanding Dapps in the EOS ecosystem, and become an incubator and filter for the EOS application ecology.Becoming a block producer was just the beginning. MEET.ONE never stopped its progress. We will contribute all our strength and work with EOS supporters around the world to build a healthy EOS ecosystem.","https://meet.one","https://raw.githubusercontent.com/meet-one/website/master/meetone-256.png","https://t.me/MeetOneEnglish","https://steemit.com/@meetone","https://twitter.com/MeetDotOne",""]' -p proxy.m
+```
+
+get proxy list:
+```
+cleos -u http://sidechain-test.meet.one:8888 get table proxies.m proxies.m proxies
 ```
 
 ### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
