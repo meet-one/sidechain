@@ -156,6 +156,15 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 
 #### Step 5. Get vote.
 
+### Register block producer info
+
+Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass was depolyed on producers.m
+
+submit bp info:
+```
+cleos push action producers.m set '{"owner":"meetone1.m", "json": "{\"producer_account_name\":\"meetone1.m\",\"org\":{\"candidate_name\":\"MEET.ONE\",\"website\":\"https://meet.one\",\"ownership_disclosure\":\"https://steemit.com/eos/@meetone/meet-one-statement-of-ownership\",\"code_of_conduct\":\"https://steemit.com/eos/@meetone/revenue-distribution-of-meet-one\",\"email\":\"hello@meet.one\",\"branding\":{\"logo_256\":\"https://meet.one/meetone-256.png\",\"logo_1024\":\"https://meet.one/meetone-1024.png\",\"logo_svg\":\"https://meet.one/assets/MEET.svg\"},\"location\":{\"name\":\"Singapore\",\"country\":\"SG\",\"latitude\":1.29027,\"longitude\":103.851959},\"social\":{\"steemit\":\"meetone\",\"twitter\":\"MeetDotOne\",\"github\":\"meet-one\",\"telegram\":\"MeetOne\"}},\"nodes\":[{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"seed\",\"p2p_endpoint\":\"p2p.meet.one:9876\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"full\",\"api_endpoint\":\"http://mainnet.meet.one\",\"ssl_endpoint\":\"https://mainnet.meet.one\"},{\"location\":{\"name\":\"Taiwan\",\"country\":\"CN\",\"latitude\":23.553118,\"longitude\":121.0211024},\"node_type\":\"producer\"}]}"}' -p meetone1.m@active
+```
+
 ### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
 
 #### Create new account
