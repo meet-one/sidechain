@@ -172,7 +172,7 @@ cleos -u http://sidechain-test.meet.one:8888 push action producers.m set '{"owne
 
 ### Register proxy info
 
-Opeonsource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS was depolyed to proxies.m
+Opensource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS was depolyed to proxies.m
 
 get proxy list:
 ```
