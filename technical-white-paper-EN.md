@@ -76,7 +76,7 @@ The MEET.ONE sidechain platform is designed for developers. A large number of de
 
 The MEET.ONE sidechain allows the free creation of 12-digit account names ending in “.m”. The names can include the lowercase characters a-z, and the digits 1-5. Creating MEET.ONE sidechain account names consumes the creator's RAM, but additional sidechain RAM resources can be purchased with MEETONE tokens. The accounts support sending actions to each other, and also support custom response logic for each action. Each account has its own independent database, support for additions and deletions, and sidechain smart contracts.
 
-Invitation codes create 11-digit account name ending in .m on the EOS main network and on the side-chain free of charge. After IBC (Inter-Chain Communication) goes online, EOS mainnet account names may be used in the side chain.
+Invitation codes create 11-digit account name ending in .m on the EOS main network, all accounts (*.m) will be sync to sidechain for free. After IBC (Inter-Chain Communication) goes online, all EOS mainnet accounts can be used in the side chain.
 
 Currently, several dApp development teams on the EOS main network have created EOS accounts for users free of charge. All mainnet dApps share the same account system, and accounts created by other dApps can be used directly in new dApps without repeated creation; the MEET.ONE side chain will extend this further.
 
@@ -165,7 +165,7 @@ Recommended node machine configuration: 4 Core CPU, 32 GB RAM. Note that P2P nod
 
 ### 4.3 Consensus Algorithm (aBFT-DPoS)
 
-The EOS.IO consensus mechanism is BFT+DPoS. Under the DPOS (Delegated Proof-of-Stake) mechanism, each token holder participates in the selection of Block Producers that can represent their own interests. The top 21 Block Producers have the permission to produce blocks, and the block confirmation period is 0.5 seconds. The node continuously produces 12 blocks and then switches to the next Block Producer.
+The EOS.IO consensus mechanism is BFT+DPoS. Under the DPoS (Delegated Proof-of-Stake) mechanism, each token holder participates in the selection of Block Producers that can represent their own interests. The top 21 Block Producers have the permission to produce blocks, and the block confirmation period is 0.5 seconds. The node continuously produces 12 blocks and then switches to the next Block Producer.
 
 The aBFT (asynchronous Byzantine Fault Tolerance) mechanism allows each block to be packaged by the Block Producer and waits for at least 14 (21 * 2 / 3) nodes in the first 21 Block Producers to be identified as two rounds of verification. The formula for irreversible blocks is as follows:
 
