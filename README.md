@@ -47,6 +47,8 @@ proxies.m
 
 Get synced to the network within a minute.
 
+[Snapshot List](https://storage.googleapis.com/eos-snapshot-backups/)
+
 ### Monitor
 
 Sidechain monitoring tool.
