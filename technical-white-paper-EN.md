@@ -175,3 +175,10 @@ The aBFT (asynchronous Byzantine Fault Tolerance) mechanism allows each block to
 EOS.IO supports initiating future transactions to be executed at a specific time.
 
 
+Telegram: https://t.me/meetonechain
+
+Twitter: https://twitter.com/Meetdotone
+
+Website: https://meet.one
+
+Github: https://github.com/meet-one
