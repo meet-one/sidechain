@@ -185,3 +185,11 @@ EOS.IO 支持发起在未来某一个时间定时执行的事务。
 内联通信可以用于请求其它操作，被作为调用操作的一部分执行。内联通信不能随意使用，需要相应授权。内联通信是当前交易的一个子集，其使用和当前交易的相同作用域和权限进行操作，由当前交易执行并调用内联交易。如果在交易的任意一个环节失败，则内联操作将与交易的其余部分一起被回滚。不管当前交易是否成功，调用内联的操作都不会在交易范围之外产生任何通知。
 
 
+### 联系我们
+Telegram: https://t.me/meetonechain
+
+Twitter: https://twitter.com/Meetdotone
+
+Website: https://meet.one
+
+Github: https://github.com/meet-one
