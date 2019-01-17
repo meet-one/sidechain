@@ -4,7 +4,7 @@ Based on the concept of “open & sharing”, the MEET.ONE team will build a blo
 
 The MEET.ONE team has accumulated rich industry and technical experience in dApp smart contract development, wallet development, and BP deployment. The MEET.ONE sidechain is designed to extend the EOS ecosystem, reduce EOS usage thresholds and costs, and enable sidechain dApps to access primary network resources.
 
-![image](./assets/sidechain-EN.png)
+![image](./assets/sidechain_EN.png)
 
 
 ### 1.1 Finance

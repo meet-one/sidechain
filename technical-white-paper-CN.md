@@ -4,7 +4,7 @@
 
 MEET.ONE 团队在 DAPP 智能合约开发、钱包开发、节点部署等多个方向积累了丰富的行业与技术经验。MEET.ONE 侧链宗旨在于扩充 EOS 生态，降低 EOS 使用门槛和成本，同时赋能侧链 DApp 访问主网资源。
 
-![image](./assets/sidechain-CN.png)
+![image](./assets/sidechain_CN.png)
 
 
 ### 1.1 金融
