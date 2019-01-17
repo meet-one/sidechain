@@ -129,7 +129,7 @@ History Node: Supports querying account transaction records, contract history, e
 
 Peer Node: Used for block synchronization between nodes.
 
-### 3.4 Operational Monitoring
+### 3.4 IT Operations
 
 #### 3.4.1 BP Monitoring/Abnormal Alarm
 
