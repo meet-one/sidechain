@@ -56,7 +56,7 @@ This amount of control has sparked controversy about artist compensation and tre
 
 ### 2.1 MEET.ONE Wallet
 
-The MEET.ONE wallet was released on the EOS main net this month and has already become the largest EOS wallet, by number of users. Support includes
+The MEET.ONE wallet was released on June, 2018. And has already become the largest EOS wallet, by number of users. Support all the features of EOS.IO.
 
 Sidechain users can manage their account assets through the MEET.ONE Wallet APP, and in the Wallet App Center they can go to all MEET.ONE sidechain-based s. dApp teams based on the sidechain can reach sidechain users through the MEET.ONE wallet.
 
