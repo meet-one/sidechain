@@ -47,11 +47,13 @@ proxies.m
 
 Get synced to the network within a minute.
 
-[Snapshot List](https://storage.googleapis.com/eos-snapshot-backups/)
+[Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
 
 ### Monitor
 
 Sidechain monitoring tool.
+
+[Testnet status channel - warning for missed blocks](https://t.me/joinchat/AAAAAFJ5qc9n7TOmNJnMAA)
 
 ### Browser
 
