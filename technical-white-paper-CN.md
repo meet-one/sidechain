@@ -162,7 +162,7 @@ RAM：智能合约存储资源;
 
 MEET.ONE 侧链超级节点由 MEETONE token 持有人投票选出，得票数前 21 名当选为出块节点。节点奖励由 MEET.ONE 基金会承担，每年共支出 1 亿 MEETONE，MEETONE token 不增发。 在侧链启动时，基金会将分别向系统账户 eosio.vpay 和 eosio.bpay 转入 5 亿 MEETONE token，共计 10 亿，用于支付 MEETONE 侧链十年内的奖励。其中，eosio.bpay 用于支付前 21 个出块超级节点的出块奖励，eosio.vpay 则按照所有超级节点得到的投票权重分配投票奖励。超级节点每隔 24 小时可以通过系统合约调用 claimrewards 领取节点奖励，如果低于 1000 MEETONE 则无法领取。
 
-建议节点机器配置: 4 Core CPU、32 GB RAM，需要对外公开P2P 节点、API 节点。
+建议节点机器配置: 4 Core CPU、16 GB RAM，需要对外公开P2P 节点、API 节点。
 
 
 ### 4.3 共识算法（aBFT-DPoS）
