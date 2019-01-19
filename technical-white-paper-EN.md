@@ -58,11 +58,11 @@ This amount of control has sparked controversy about artist compensation and tre
 
 The MEET.ONE wallet was released on June, 2018. And has already become the largest EOS wallet, by number of users. Support all the features of EOS.IO.
 
-Sidechain users can manage their account assets through the MEET.ONE Wallet APP, and in the Wallet App Center they can go to all MEET.ONE sidechain-based s. dApp teams based on the sidechain can reach sidechain users through the MEET.ONE wallet.
+Sidechain users can manage their account assets through the MEET.ONE Wallet APP, and in the Wallet App Center they can go to all MEET.ONE sidechain-based dApps. dApp teams based on the sidechain can reach sidechain users through the MEET.ONE wallet.
 
 ### 2.2 MEET.ONE Incubator
 
-EOS's DPOS consensus mechanism determines that all developers must hold EOS tokens before they can use the bandwidth, storage and other resources of the EOS main network. However, due to the decentralized free market, the cost of EOS is volatile. This situation is not friendly to new developers. At the same time, the EOS main chain is an open and free ecological environment. The lack of filtering for malicious or bad applications is likely to lead to the proliferation of low-value applications in the main chain. The average user has a limited ability to identify low-value applications and it could scare off users.
+EOS's DPoS consensus mechanism determines that all developers must hold EOS tokens before they can use the bandwidth, storage and other resources of the EOS main network. However, due to the decentralized free market, the cost of EOS is volatile. This situation is not friendly to new developers. At the same time, the EOS main chain is an open and free ecological environment. The lack of filtering for malicious or bad applications is likely to lead to the proliferation of low-value applications in the main chain. The average user has a limited ability to identify low-value applications and it could scare off users.
 
 The MEET.ONE side-chain has the same architecture as the EOS main net and will be an incubator for the EOS application ecosystem. The sidechain includes free CPU/NET/RAM resources, providing developers with one-stop support services to continuously produce high-quality applications through the MEET.ONE incubation platform. The program intends to encourage developers to realize their ideas. The goal is to build reference standards for the development of dApp projects on the EOS ecosystem, filter bad applications, and strive to improve the user experience in the ecosystem.
 
@@ -74,40 +74,40 @@ The MEET.ONE sidechain platform is designed for developers. A large number of de
 
 #### 3.1.1 Account
 
-The MEET.ONE sidechain allows the free creation of 12-digit account names ending in “.m”. The names can include the lowercase characters a-z, and the digits 1-5. Creating MEET.ONE sidechain account names consumes the creator's RAM, but additional sidechain RAM resources can be purchased with MEETONE tokens. The accounts support sending actions to each other, and also support custom response logic for each action. Each account has its own independent database, support for additions and deletions, and sidechain smart contracts.
+The MEET.ONE sidechain allows the free creation of 12-digit account names ending in “.m”. The names can include the lowercase characters a-z, and the digits 1-5. Creating MEET.ONE sidechain account names consumes the creator's RAM, but additional sidechain RAM resources can be purchased with MEETONE tokens. The accounts support sending actions to each other, and also support custom response logic for each action. Each account has its own independent database, support for additions and deletions.
 
-Invitation codes create 11-digit account name ending in .m on the EOS main network, all accounts (*.m) will be sync to sidechain for free. After IBC (Inter-Chain Communication) goes online, all EOS mainnet accounts can be used in the side chain.
+The invitation codes create 11-digit account name ending in .m on the EOS main net, all accounts (*.m) will be sync to sidechain for free. After IBC (Inter-Chain Communication) goes online, all EOS mainnet accounts will be sync to side chain.
 
-Currently, several dApp development teams on the EOS main network have created EOS accounts for users free of charge. All mainnet dApps share the same account system, and accounts created by other dApps can be used directly in new dApps without repeated creation; the MEET.ONE side chain will extend this further.
+Currently, several dApp development teams on the EOS main network have created EOS accounts for users free of charge. All mainnet dApps share the same account system, and accounts created by other dApps can be used directly in new dApps without repeated creation.
 
 #### 3.1.2 Public and private keys
 
-Using, the same process as the EOS mainnet, the public and private keys of the MEET.ONE side chain account can be understood as the account number and password, and the private key can generate the public key, and vice versa. The private key is used to generate a signature to initiate a transaction. Each account has two permissions, owner and active, each corresponding to a pair of public and private keys, and both support custom permissions. It is recommended that only the active key be used for activities such as transfers or voting. If the active key is stolen, users can use the owner key to replace the active key.
+Using, the same process as the EOS mainnet, the public and private keys of the MEET.ONE side chain account can be understood as the account number and password, and the private key can generate the public key. The private key is used to generate a signature to initiate a transaction. Each account has two permissions, owner and active, each corresponding to a pair of public and private keys, and it support create custom permissions. It is recommended that only the active key be used for activities such as transfers or voting. If the active key is stolen, users can use the owner key to replace the active key.
 
 #### 3.1.3 Multi-sign
 
-Account multi-signing (multisig) is a very common function on blockchain. In general, developers only need a private key to initiate a transaction through the wallet, but for teams or large-value accounts, many times it is necessary to have multiple responsible parties. In such cases, multiple private keys can be authorized to be required to initiate a transaction. For example, the active privilege threshold of account A is 2, and there are three multi-signed accounts B, C, and D, each with a weight of 1; at least two of the three accounts B, C, and D are required to initiate transactions with their active keys. 
+Account multi-signing (multisig) is a very common function on blockchain. In general, developers only need a private key to initiate a transaction through the wallet, but for teams or large-value accounts, it is necessary to have multiple responsible parties. In such cases, multiple private keys can be authorized to be required to initiate a transaction. For example, the active privilege threshold of account A is 2, and there are three multi-signed accounts B, C, and D, each with a weight of 1; at least two of the three accounts B, C, and D are required to initiate transactions with their active keys. 
 
 ### 3.2 Development Tools
 
 #### 3.2.1 CLEOS / KEOSD
 
-CLEOS / KEOSD are developer command line tools. KEOSD is for managing private keys, running locally on the developer and storing private keys only locally. CLEOS is used to invoke a system contract or a a third party smart contract. CLEOS will use the private key stored by KEOSD to sign the transaction when the transaction is initiated.
+CLEOS / KEOSD are developer command line tools. KEOSD is for managing private keys, running locally on the device and storing private keys only locally. CLEOS is used to invoke a system contract or a a third party smart contract. CLEOS will use the private key stored by KEOSD to sign the transaction when the transaction is initiated.
 
 #### 3.2.2 EOSIO.CDT
 
-EOSIO.CDT is a toolkit for sidechain network smart contract development, which includes smart contract initialization tools, smart contract APIs, and compilation tools. When compiling smart contracts, EOSIO.CDT will analyze and optimize the contract code. (LLVM)
+EOSIO.CDT is a toolkit for smart contract development, which includes smart contract initialization tools, smart contract APIs, and compilation tools. When compiling smart contracts, EOSIO.CDT will analyze and optimize the contract code. (LLVM)
 
 #### 3.2.3 EOSJS
 
-EOSJS is a sidechain JavaScript development kit that supports nodejs and browser front-end environments. Developers can communicate with sidechain API nodes via integrated EOSJS to query network status, or to send actions and system contracts/customizations. Smart contract interactions are currently available for download and installation via NPM / YARN.
+EOSJS is a JavaScript development kit that supports nodejs and browser front-end environments. Developers can communicate with sidechain API nodes via integrated EOSJS to query network status, or to send actions. EOSJS is currently available for download and installation via NPM / YARN.
 
 
 ### 3.3 Basic services
 
 #### 3.3.1 Smart Contract
 
-Smart contracts are programs that are registered and run on blockchain nodes. Currently, contract development only supports the C/C++ language. The development tools eosio.cdt are used to generate the deployment files WASM and ABI, balancing performance and cross-platform. EOS has specialized API functions that provide more robust type safety and reduce contract development. The smart contract defines the relevant interfaces that interact with the outside of the EOS system and implements the interface functions. The user interacts with the contract through the interface provided by the smart contract. The developer can decide what the user can do and can call the corresponding program to process the user's request. 
+Smart contracts are programs that are deployed and run on blockchain nodes. Currently, contract development only supports the C/C++ language. The development tools eosio.cdt are used to generate the deployment files WASM and ABI, balancing performance and cross-platform. EOS has specialized API functions that provide more robust type safety and reduce contract development. The smart contract defines the relevant interfaces that interact with the outside of the EOS system and implements the interface functions. The user interacts with the contract through the interface provided by the smart contract. The developer can decide what the user can do and can call the corresponding program to process the user's request. 
 
 #### 3.3.2 Data Storage
 
@@ -121,13 +121,13 @@ As a contract developer needs to pay for the running cost of data storage, users
 
 #### 3.3.3 API Node
  
-The sidechain block producers will provide developers and wallets with global node services, including an API Node, History Node, and Peer Node.
+The sidechain block producers will provide global node services, including API Node, History Node, and Peer Node.
 
 API Node: Supports sending transactions, querying accounts, querying contract databases, etc.
 
-History Node: Supports querying account transaction records, contract history, etc.
+History Node: Supports querying account history actions, contract history, etc.
 
-Peer Node: Used for block synchronization between nodes.
+Peer Node: Used for blocks peer between nodes.
 
 ### 3.4 IT Operations
 
@@ -159,7 +159,7 @@ For example, the developer deploys a datastream smart contract in account A, all
 
 ### 4.2 Side Chain Block Producers
 
-The MEET.ONE side chain Block Producer are elected by the MEETONE token holders, and the top 21 who received the greatest number of votes become active block producers. The producer reward is borne by the MEET.ONE Foundation. A total of 100 million MEETONE is spent each year, and there in no inflation for the MEETONE token. At the start of the side chain, the Foundation will transfer 500 million MEETONE tokens to the system accounts eosio.vpay and eosio.bpay, respectively, for a total of 1 billion, to pay for the MEETONE side chain for ten years. The eosio.bpay account is used to pay out the block rewards to the top 21 Block Producers, and eosio.vpay assigns voting rewards according to the voting weights obtained by all Block Producers. The Block Producer can call claimrewards to receive producer rewards through the system contract every 24 hours Block producers cannot submit claims if they have earned less than 1000 MEETONE.
+The MEET.ONE side chain Block Producer are elected by the MEETONE token holders, and the top 21 who received the greatest number of votes become active block producers. The producer reward is borne by the MEET.ONE Foundation. A total of 100 million MEETONE is spent each year, and there in no inflation for the MEETONE token. At the start of the side chain, the Foundation will transfer 500 million MEETONE tokens to the system accounts eosio.vpay and eosio.bpay, respectively, for a total of 1 billion, to pay for the MEETONE side chain for ten years. The eosio.bpay account is used to pay out the block rewards to the top 21 Block Producers, and eosio.vpay assigns voting rewards according to the voting weights obtained by all Block Producers. The Block Producer can call claimrewards to receive rewards through the system contract every 24 hours. Block producers cannot submit claims if they have earned less than 1000 MEETONE.
 
 Recommended node machine configuration: 4 Core CPU, 16 GB RAM. Note that P2P nodes and API nodes must be exposed.
 
