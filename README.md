@@ -59,6 +59,8 @@ Sidechain monitoring tool.
 
 Sidechain browser.
 
+[EOSX for sidechain testnet](https://meetone-test.eosx.io/)
+
 ### Wallet
 
 MEET.ONE Wallet APP.
