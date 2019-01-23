@@ -76,6 +76,7 @@ MEET.ONE Wallet APP.
 ### P2P list
 
 ```
+p2p-peer-address = 95.179.135.231:9876
 p2p-peer-address = 108.61.144.245:8012
 p2p-peer-address = meetone.eosn.io:9876
 p2p-peer-address = peer.meetonetest.alohaeos.com:9876
@@ -92,6 +93,7 @@ p2p-peer-address = sidechain-test.meet.one:9876
 http://sidechain-test.meet.one:8888/v1/chain/get_info
 http://sidechain-test2.meet.one:8888/v1/chain/get_info
 https://meetone-testnet.eosphere.io/v1/chain/get_info
+http://95.179.135.231:8888/v1/chain/get_info
 ```
 
 ### History node list (filter-on = *)
