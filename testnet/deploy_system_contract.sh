@@ -25,18 +25,19 @@ cleos create account eosio eosio.token EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNT
 cleos create account eosio eosio.wrap EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.bios EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.faucet EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio eosio.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 
 
 # deploy token contract
 
-cleos set contract eosio.token /home/ubuntu/eosio.contracts/eosio.token eosio.token.wasm eosio.token.abi -p eosio.token@active
+cleos set contract eosio.token /home/ubuntu/eosio.contracts/eosio.token/src eosio.token.wasm eosio.token.abi -p eosio.token@active
 cleos push action eosio.token create '[ "eosio", "10000000000.0000 MEETONE"]' -p eosio.token@active
 cleos push action eosio.token issue '[ "eosio", "10000000000.0000 MEETONE", "memo" ]' -p eosio@active
 
 
 # deploy system contract
 
-cleos set contract eosio /home/ubuntu/eosio.contracts/eosio.system eosio.system.wasm eosio.system.abi -p eosio@active
+cleos set contract eosio /home/ubuntu/eosio.contracts/eosio.system/src eosio.system.wasm eosio.system.abi -p eosio@active
 cleos push action eosio setpriv '["eosio", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
 
@@ -62,10 +63,12 @@ cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 # create accounts of meetone team
 
 cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos push action eosio.token transfer '[ "eosio", "m", "100000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "m", "99999790.0000 MEETONE", "" ]' -p eosio@active
 cleos system newaccount m bank.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m meetone.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m foundation.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+
+
 cleos system newaccount m producers.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m proxies.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos system newaccount m proxy.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
@@ -73,9 +76,12 @@ cleos system newaccount m proxy.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTR
 
 # transfer token from eosio to m & faucet
 
-cleos push action eosio.token transfer '[ "eosio", "eosio.faucet", "100000000.0000 MEETONE", "" ]' -p eosio@active
-cleos push action eosio.token transfer '[ "eosio", "bank.m", "7299999790.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "foundation.m", "1500000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "eosio.bpay", "500000000.0000 MEETONE", "" ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "eosio.vpay", "500000000.0000 MEETONE", "" ]' -p eosio@active
 cleos push action eosio delegatebw '[ "eosio", "meetone.m", "1250000000.0000 MEETONE", "1250000000.0000 MEETONE", 1 ]' -p eosio@active
+cleos push action eosio.token transfer '[ "eosio", "bank.m", "7299999790.0000 MEETONE", "" ]' -p eosio@active
+
 cleos get currency balance eosio.token eosio
 cleos get currency balance eosio.token eosio.faucet
 cleos get currency balance eosio.token m
