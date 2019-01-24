@@ -21,6 +21,9 @@ source ~/.profile
 
 2. ABP 启动侧链 (genesis.json, config.ini)
 
+[config.ini](https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/config.ini)
+[genesis.json](https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/genesis.json)
+
 ```
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/config.ini
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/genesis.json
@@ -42,14 +45,14 @@ eosio.bios
 eosio.m
 ```
 
-4. 部署系统合约、MEETONE 合约、多签合约、BIOS 合约、WRAP 合约
+4. 部署系统合约、系统 TOKEN 合约、多签合约、BIOS 合约、WRAP 合约
 
 ```
 eosio.system (diff: rewards, bid,refundbid, meetone.m unstake, activated 0.01%, create newaccount)
 eosio.token
 eosio.msig
 eosio.wrap
-eosio.bios (meetone.m)
+eosio.bios
 ```
 
 5. 创建侧链账号且转出 MEETONE
@@ -59,13 +62,9 @@ eosio.bios (meetone.m)
 cleos push action eosio.token transfer '[ "eosio", "eosio.vpay", "500000000.0000 MEETONE", "" ]' -p eosio@active
 cleos push action eosio.token transfer '[ "eosio", "eosio.bpay", "500000000.0000 MEETONE", "" ]' -p eosio@active
 
-# 创建基金会账户, 且转入 14 亿 MEETONE
+# 创建基金会账户, 且转入 15 亿 MEETONE
 cleos system newaccount m foundation.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos push action eosio.token transfer '[ "eosio", "m", "1499999790.0000 MEETONE", "" ]' -p eosio@active
-
-# 创建 m 账户, 且转入 1 亿 MEETONE (基金会的 token)
-cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
-cleos push action eosio.token transfer '[ "foundation.m", "m", "10000000.0000 MEETONE", "" ]' -p eosio@active
 
 # 创建 MEETONE 团队账户, 且抵押 25 亿 MEETONE, 全部解除抵押需要 4 年, 冻结代码在系统合约可以查阅 
 cleos system newaccount m meetone.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
@@ -74,6 +73,10 @@ cleos push action eosio delegatebw '[ "eosio", "meetone.m", "1250000000.0000 MEE
 # 创建跨链转币账户 bank.m, 且转入 50 亿 MEETONE
 cleos system newaccount m bank.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
 cleos push action eosio.token transfer '[ "eosio", "bank.m", "5000000000.0000 MEETONE", "" ]' -p eosio@active
+
+# 创建 m 账户, 且转入 1 亿 MEETONE
+cleos system newaccount eosio m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "100.0000 MEETONE" --stake-cpu "100.0000 MEETONE" --buy-ram "10.0000 MEETONE"
+cleos push action eosio.token transfer '[ "foundation.m", "m", "10000000.0000 MEETONE", "" ]' -p eosio@active
 
 # 创建 producers.m, proxies.m 账户
 cleos system newaccount m producers.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN --stake-net "0.0000 MEETONE" --stake-cpu "0.0000 MEETONE" --buy-ram "10.0000 MEETONE"
