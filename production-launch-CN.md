@@ -1,4 +1,11 @@
-0. 安装环境
+0. EOS 主网准备工作
+
+```
+创建多签账户 bank.m
+将 MEETONE 基金会 25 亿 MEETONE 转入 bank.m
+```
+
+1. 安装侧链环境
 
 ```
 git clone https://github.com/meet-one/eos.git
@@ -12,14 +19,14 @@ echo 'PATH=$PATH:/usr/local/eosio/bin/' >> ~/.profile
 source ~/.profile
 ```
 
-1. ABP 启动侧链 (genesis.json, config.ini)
+2. ABP 启动侧链 (genesis.json, config.ini)
 
 ```
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/config.ini
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/genesis.json
 ```
 
-2. 创建 10 个系统账号 eosio.*
+3. 创建 10 个系统账号 eosio.*
 
 ```
 eosio
@@ -35,7 +42,7 @@ eosio.bios
 eosio.m
 ```
 
-3. 部署系统合约、MEETONE 合约、多签合约、BIOS 合约、WRAP 合约
+4. 部署系统合约、MEETONE 合约、多签合约、BIOS 合约、WRAP 合约
 
 ```
 eosio.system (diff: rewards, bid,refundbid, meetone.m unstake, activated 0.01%, create newaccount)
@@ -45,7 +52,7 @@ eosio.wrap
 eosio.bios (meetone.m)
 ```
 
-3. 创建侧链账号且转出 MEETONE
+5. 创建侧链账号且转出 MEETONE
 
 ```
 # 转出 10 亿 MEETONE 到节点奖励账户
@@ -74,30 +81,30 @@ cleos system newaccount m proxies.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUP
 
 ```
 
-4. 部署侧链合约
+6. 部署侧链合约
 
 ```
 producers.m
 proxies.m
 ```
 
-5. 准备空投账户 eosio.m, 转入 1 千万 MEETONE 用于同步主网账户以及抵押 CPU、NET
+7. 准备空投账户 eosio.m, 转入 1 千万 MEETONE 用于同步主网账户以及抵押 CPU、NET
 
 ```
 cleos push action eosio.token transfer '[ "foundation.m", "eosio.m", "10000000.0000 MEETONE", "" ]' -p eosio@active
 ```
 
-6. 同步主网 *.m 账号, 主网 60 万账户同步至侧链(.m结尾,前面十位字符随机生成, NET: 1 MEETONE, CPU: 9 MEETONE), Top 50 节点账户名需要提前在主网生成, 更换成团队名称的短域名(eosnation.m, meetone.m, eosasia.m)
+8. 同步主网 *.m 账号, 主网 60 万账户同步至侧链(.m结尾,前面十位字符随机生成, NET: 1 MEETONE, CPU: 9 MEETONE), Top 50 节点账户名需要提前在主网生成, 更换成团队名称的短域名(eosnation.m, meetone.m, eosasia.m)
 
-7. ABP 公布 peer 地址, 提供 snapshot 下载地址, 超级节点开始同步数据, 注册BP信息准备出块。
+9. ABP 公布 peer 地址, 提供 snapshot 下载地址, 超级节点开始同步数据, 注册BP信息准备出块。
 
-8. m 账户投票(抵押 1 百万 MEETONE), 侧链激活, 超级节点开始出块
+10. m 账户投票(抵押 1 百万 MEETONE), 侧链激活, 超级节点开始出块
  
  ```
  cleos system delegatebw m m "500000.0000 MEETONE" "500000.0000 MEETONE"
  ```
 
-9. 10 个系统账户权限 resign 给超级节点 (eosio.prods)
+11. 10 个系统账户权限 resign 给超级节点 (eosio.prods)
 
 ```
 # resign
@@ -111,12 +118,12 @@ do
 done
 ```
  
-10. 部署 MEETONE 跨链迁移合约 bank.m
+12. 部署 MEETONE 跨链迁移合约 bank.m
 
 ```
 bank.m
 ```
 
-11. 区块浏览器开始接入
+13. 区块浏览器开始接入
 
-12. 钱包上线侧链模块
+14. 钱包上线侧链模块
