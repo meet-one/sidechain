@@ -79,6 +79,7 @@ MEET.ONE Wallet APP.
 p2p-peer-address = 95.179.135.231:9876
 p2p-peer-address = 108.61.144.245:8012
 p2p-peer-address = 95.216.114.172:9876
+p2p-peer-address = peer-meetone.starteos.io:9876
 p2p-peer-address = meetone.eosn.io:9876
 p2p-peer-address = peer.meetonetest.alohaeos.com:9876
 p2p-peer-address = meetone-testnet.eosphere.io:9876
