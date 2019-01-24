@@ -15,10 +15,6 @@ source ~/.profile
 
 2. ABP launch nodeos
 
-[config.ini](https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/config.ini)
-
-[genesis.json](https://raw.githubusercontent.com/meet-one/sidechain/master/mainnet/genesis.json)
-
 ```
 cd ~
 mkdir nodeos/config-dir
