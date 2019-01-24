@@ -39,7 +39,7 @@ cleos push action eosio setpriv '["eosio.msig", 1]' -p eosio@active
 
 cd ../../eosio.wrap/src
 eosio-cpp -contract=eosio.wrap -abigen eosio.wrap.cpp -o eosio.wrap.wasm -I=/usr/local/include/ -I=../include
-cleos set contract eosio.wrap /home/ubuntu/eosio.contracts/eosio.wrap eosio.wrap.wasm eosio.wrap.abi -p eosio.wrap@active
+cleos set contract eosio.wrap ./ eosio.wrap.wasm eosio.wrap.abi -p eosio.wrap@active
 cleos push action eosio setpriv '["eosio.wrap", 1]' -p eosio@active
 
 cd ../../eosio.bios/src
