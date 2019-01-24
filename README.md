@@ -138,13 +138,13 @@ Testnet machine: 4 CPU, 8GB RAM
 ```
 git clone https://github.com/meet-one/eos.git
 cd eos
-git checkout tags/v1.5.3
+git checkout tags/v1.6.0
 git submodule update --init --recursive
 ./eosio_build.sh -s MEETONE
 cd build
 sudo make install
 echo 'PATH=$PATH:/usr/local/eosio/bin/' >> ~/.profile
-source ~/.profile 
+source ~/.profile
 ```
 
 
