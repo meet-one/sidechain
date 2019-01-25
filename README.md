@@ -132,7 +132,7 @@ Public key: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 
 Private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
-Testnet machine: 4 CPU, 8GB RAM
+Testnet machine: 2 CPU, 8GB RAM
 
 #### Step 1. Install
 ```
