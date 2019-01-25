@@ -161,7 +161,7 @@ For example, the developer deploys a datastream smart contract in account A, all
 
 The MEET.ONE side chain Block Producer are elected by the MEETONE token holders, and the top 21 who received the greatest number of votes become active block producers. The producer reward is borne by the MEET.ONE Foundation. A total of 100 million MEETONE is spent each year, and there in no inflation for the MEETONE token. At the start of the side chain, the Foundation will transfer 500 million MEETONE tokens to the system accounts eosio.vpay and eosio.bpay, respectively, for a total of 1 billion, to pay for the MEETONE side chain for ten years. The eosio.bpay account is used to pay out the block rewards to the top 21 Block Producers, and eosio.vpay assigns voting rewards according to the voting weights obtained by all Block Producers. The Block Producer can call claimrewards to receive rewards through the system contract every 24 hours. Block producers cannot submit claims if they have earned less than 1000 MEETONE.
 
-Recommended node machine configuration: 4 Core CPU, 16 GB RAM. Note that P2P nodes and API nodes must be exposed.
+Recommended node machine configuration: 4 Core CPU, 16 GB RAM. Note that P2P address and API address must be exposed.
 
 ### 4.3 Consensus Algorithm (aBFT-DPoS)
 
