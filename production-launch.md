@@ -41,6 +41,7 @@ cleos create account eosio eosio.vpay EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTc
 cleos create account eosio eosio.wrap EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.bios EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 cleos create account eosio eosio.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+cleos create account eosio genesis.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
 ```
 
 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
@@ -135,11 +136,19 @@ cleos push action eosio.token transfer '[ "foundation.m", "eosio.m", "10000000.0
 
 8. Syncing accounts *.m of EOS mainnet to sidechain (The account name are the same as the EOS mainnet)
 
-9. Share the peer list and snapshot file to community, block producer candidate start to peer and register producer
+9. Producer genesis.m register producer
 
-10. Deploy bank.m to EOS mainnet, MEETONE token holders start to transfer MEETONE to sidechain.
+```
+cleos system regproducer genesis.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPTRqTp5VaN
+```
 
-11. The eosio.* resign to eosio.prods
+10. Producer genesis.m start to producing blocks, update genesis.m key to EOS1111111111111111111111111111111114T1Anm
+
+11. Share the peer list and snapshot file to community, block producer candidate start to peer and register producer
+
+12. Deploy bank.m to EOS mainnet, MEETONE token holders start to transfer MEETONE to sidechain.
+
+13. The eosio.* resign to eosio.prods
 
 ```
 # resign
@@ -153,6 +162,6 @@ do
 done
 ```
  
-12. MEETONE token holders of sidechain start to vote, can't buyram before sidechain activated.
+14. MEETONE token holders of sidechain start to vote, can't buyram before sidechain activated.
 
-13. Sidechain will be activated if total votes achieve 100 million.
+15. Sidechain will be activated if total votes achieve 100 million.
