@@ -164,4 +164,4 @@ done
  
 14. MEETONE token holders of sidechain start to vote, can't buyram before sidechain activated.
 
-15. Sidechain will be activated if total votes achieve 100 million.
+15. Sidechain will be activated after 24 hours.
