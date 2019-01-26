@@ -137,11 +137,7 @@ cleos push action eosio.token transfer '[ "foundation.m", "eosio.m", "10000000.0
 
 9. Share the peer list and snapshot file to community, block producer candidate start to peer and register producer
 
-10. Account m vote for registered block producer candidates to activated sidechain
- 
- ```
- cleos system voteproducer prods m 
- ```
+10. Deploy bank.m to EOS mainnet, MEETONE token holders start to transfer MEETONE to sidechain.
 
 11. The eosio.* resign to eosio.prods
 
@@ -157,6 +153,6 @@ do
 done
 ```
  
-12. Deploy contract bank.m to EOS mainnet
+12. MEETONE token holders of sidechain start to vote, can't buyram before sidechain activated.
 
-13. Done.
+13. Sidechain will be activated if total votes achieve 100 million.
