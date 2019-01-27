@@ -174,7 +174,7 @@ nodeos --data-dir ./nodeos/producer-node/data-dir --config-dir ./nodeos/producer
 
 ### Register block producer info
 
-Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass was depolyed to producers.m
+Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass was depolyed to producers.m, this contract stores bp.json on chain.
 
 get bp list:
 ```
@@ -188,7 +188,7 @@ cleos -u http://sidechain-test.meet.one:8888 push action producers.m set '{"owne
 
 ### Register proxy info
 
-Opensource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS was depolyed to proxies.m
+Opensource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS was depolyed to proxies.m, this contract stores proxy info on chain.
 
 get proxy list:
 ```
