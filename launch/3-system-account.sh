@@ -46,3 +46,19 @@ cd ../../eosio.bios/src
 eosio-cpp -contract=eosio.bios -abigen eosio.bios.cpp -o eosio.bios.wasm -I=/usr/local/include/ -I=../include
 cleos set contract eosio.bios ./ eosio.bios.wasm eosio.bios.abi -p eosio.bios@active
 cleos push action eosio setpriv '["eosio.bios", 1]' -p eosio@active
+
+
+echo "cleos get code eosio.token"
+cleos get code eosio.token
+
+echo "cleos get code eosio"
+cleos get code eosio
+
+echo "cleos get code eosio.msig"
+cleos get code eosio.msig
+
+echo "cleos get code eosio.wrap"
+cleos get code eosio.wrap
+
+echo "cleos get code eosio.bios"
+cleos get code eosio.bios
