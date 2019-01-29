@@ -1,6 +1,7 @@
 # 2. ABP launch nodeos
 
 cd ~
+rm -rf nodeos
 mkdir nodeos
 mkdir nodeos/config-dir
 mkdir nodeos/data-dir
