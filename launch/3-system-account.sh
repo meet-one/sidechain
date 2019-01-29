@@ -16,6 +16,7 @@ cleos create account eosio eosio.m EOS7enq7SL9AUhBYgkYMksj34LPKtAr7iu56KKrNTcUPT
 # 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
 
 cd ~
+rm -rf eosio.contracts
 git clone https://github.com/meet-one/eosio.contracts.git
 cd eosio.contracts
 git checkout meetone-sidechain-1.2
