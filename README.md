@@ -12,7 +12,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 ## MEET.ONE sidechain production launch steps:
 
 ### 19/02/2019 4:00 (GMT)  
-#### snapshot of EOS mainnet.
+#### Snapshot of EOS mainnet.
 
 ### 26/02/2019 13:00 (GMT) 
 #### Genesis BP launch MEET.ONE production sidechain. [details](./genesis_bp.md) 
