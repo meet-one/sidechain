@@ -13,7 +13,7 @@ echo 'PATH=$PATH:/usr/local/eosio/bin/' >> ~/.profile
 source ~/.profile
 ```
 
-2. ABP launch nodeos
+2. Launch nodeos
 
 ```
 cd ~
