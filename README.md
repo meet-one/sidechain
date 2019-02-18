@@ -6,7 +6,7 @@
 
 [Join Testnet](./testnet.md)
 
-Telegram group for sidechain BPs: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
+Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
 
 ## MEET.ONE sidechain production launch steps:
