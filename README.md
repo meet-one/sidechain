@@ -25,7 +25,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 ### 27/02/2019 13:00 (GMT) 
 #### Sidechain activated.
 #### Top 21 BPs start producing blocks.
-#### MEET.ONE team deploy Airgrab contract to the sidechain.
+#### MEET.ONE team deploy Airgrab contract to the sidechain. [Sourcecode of Airgrab](https://github.com/meet-one/sidechain-airgrab)
 #### All sidechain accounts can Airgrab their token.
 
 ### 07/03/2019 Airdrop 
@@ -48,7 +48,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 ### 2019-02-27 21:00:00 (UTC+8) 
 #### 侧链正式激活.
 #### 前 21 名超级节点开始出块.
-#### MEET.ONE 团队在侧链部署 airgrab 合约.
+#### MEET.ONE 团队在侧链部署 airgrab 合约.[Airgrab源代码](https://github.com/meet-one/sidechain-airgrab)
 #### 所有侧链用户开始 airgrab 空投的 token。
 
 ### 2019-03-07 空投.
