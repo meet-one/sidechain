@@ -10,9 +10,11 @@ Telegram group for sidechain BPs: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg]
 
 
 ## MEET.ONE sidechain production launch steps:
-### 2019-02-19 10:00:00 (UTC+8) Take snapshot of EOS mainnet.
+### 2019-02-19 10:00:00 (UTC+8) 
+#### Take snapshot of EOS mainnet.
 
-### 2019-02-26 21:00:00 (UTC+8) ABP launch MEET.ONE production sidechain. [more details](./abp.md)
+### 2019-02-26 21:00:00 (UTC+8) 
+#### ABP launch MEET.ONE production sidechain. [more details](./abp.md)
 #### ABP share the peer node address, api node address, state snapshot file to the community. 
 #### BPs start to connect to sidechain network, and register block producer, and get vote.
 #### MEET.ONE wallet turns on sidechain feature.
@@ -31,9 +33,11 @@ Telegram group for sidechain BPs: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg]
 
 
 ## MEET.ONE 侧链主网启动流程:
-### 2019-02-19 10:00:00 (UTC+8) 进行 EOS 主网快照.
+### 2019-02-19 10:00:00 (UTC+8) 
+#### 进行 EOS 主网快照.
 
-### 2019-02-26 21:00:00 (UTC+8) ABP 启动侧链主网. [启动细节](./abp.md)
+### 2019-02-26 21:00:00 (UTC+8) 
+#### ABP 启动侧链主网. [启动细节](./abp.md)
 #### ABP 对外公布 peer 节点地址, api 节点地址, 快照文件. 
 #### 超级节点开始同步区块, 注册 BP 信息, 从社区拿到投票.
 #### MEET.ONE 钱包开放侧链模块.
