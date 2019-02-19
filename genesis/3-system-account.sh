@@ -10,6 +10,7 @@ cleos create account eosio eosio.bpay EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMe
 cleos create account eosio eosio.vpay EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
 cleos create account eosio eosio.wrap EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
 cleos create account eosio eosio.bios EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
+cleos create account eosio eosio.abp EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
 
 
 # 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
