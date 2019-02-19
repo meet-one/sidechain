@@ -1,4 +1,6 @@
-# 3. Create eosio.*
+# 3. System accounts and system contracts
+
+Create eosio.*
 
 cd ~
 cleos create account eosio eosio.token EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
@@ -13,7 +15,7 @@ cleos create account eosio eosio.bios EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMe
 cleos create account eosio eosio.abp EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
 
 
-# 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
+Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
 
 [Install eosio.cdt](https://github.com/EOSIO/eosio.cdt)
 

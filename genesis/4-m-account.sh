@@ -1,4 +1,4 @@
-# 5. Transfer MEETONE to *.m accounts
+# 4. Transfer MEETONE to *.m accounts
 
 cd ~
 
