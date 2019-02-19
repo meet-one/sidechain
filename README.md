@@ -15,7 +15,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 #### Snapshot of EOS mainnet.
 
 ### 26/02/2019 13:00 (GMT) 
-#### Genesis BP launch MEET.ONE production sidechain. [details](./genesis) 
+#### Genesis BP launch MEET.ONE production sidechain. [more details](./genesis) 
 #### Genesis BP share the peer node address, API node address, sidechain state snapshot file to the community.
 #### BPs start to connect to sidechain network, register block producer and get votes.
 #### MEET.ONE wallet turns on MEET.ONE sidechain option.
@@ -38,7 +38,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 #### 进行 EOS 主网快照.
 
 ### 2019-02-26 21:00:00 (UTC+8) 
-#### Genesis BP 启动侧链主网. [启动细节](./genesis)
+#### Genesis BP 启动侧链主网. [更多细节](./genesis)
 #### Genesis BP 对外公布 peer 节点地址, api 节点地址, 区块快照文件. 
 #### 超级节点开始同步区块, 注册 BP 信息, 从社区拿到投票.
 #### MEET.ONE 钱包开放侧链模块.

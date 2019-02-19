@@ -14,11 +14,12 @@ cleos create account eosio eosio.bios EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMe
 
 # 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
 
+[Install eosio.cdt](https://github.com/EOSIO/eosio.cdt)
+
 cd ~
-rm -rf eosio.contracts
 git clone https://github.com/meet-one/eosio.contracts.git
 cd eosio.contracts
-git checkout meetone-sidechain-1.2
+git checkout meetone-1.0
 
 cd eosio.token/src
 eosio-cpp -contract=eosio.token -abigen eosio.token.cpp -o eosio.token.wasm -I=/usr/local/include/ -I=../include
