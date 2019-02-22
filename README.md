@@ -9,7 +9,7 @@
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
 
-## MEET.ONE sidechain production launch steps:
+## MEET.ONE sidechain production launch schedule:
 
 ### 19/02/2019 4:00 (GMT)  
 #### Snapshot of EOS mainnet.
