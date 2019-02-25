@@ -9,12 +9,12 @@
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
 
-## MEET.ONE sidechain production launch steps:
+## MEET.ONE sidechain production launch schedule:
 
 ### 19/02/2019 4:00 (GMT)  
 #### Snapshot of EOS mainnet.
 
-### 26/02/2019 13:00 (GMT) 
+### 26/02/2019 13:00 (GMT) MEET.ONE online.
 #### Genesis BP launch MEET.ONE production sidechain. [more details](./genesis) 
 #### Genesis BP share the peer node address, full node address, sidechain state snapshot file to the community.
 #### BPs start to connect to sidechain network, register block producer and get votes.
@@ -24,7 +24,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 #### MEET.ONE wallet users can start to activate MEET.ONE sidechain accounts.
 #### MEET.ONE token holder starts to migrate tokens from EOS mainnet to MEET.ONE sidechain.
 
-### 27/02/2019 13:00 (GMT) 
+### 27/02/2019 13:00 (GMT) MEET.ONE activated.
 #### Sidechain activated.
 #### Top 21 BPs start producing blocks.
 #### MEET.ONE team deploy Airgrab contract to the sidechain. [Sourcecode of Airgrab](https://github.com/meet-one/sidechain-airgrab)
@@ -39,7 +39,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 ### 2019-02-19 10:00:00 (UTC+8) 
 #### 进行 EOS 主网快照.
 
-### 2019-02-26 21:00:00 (UTC+8) 
+### 2019-02-26 21:00:00 (UTC+8) MEET.ONE 上线
 #### Genesis BP 启动侧链主网. [更多细节](./genesis)
 #### Genesis BP 对外公布 peer 节点地址, 全节点地址, 区块快照文件. 
 #### 超级节点开始同步区块, 注册 BP 信息, 从社区拿到投票.
@@ -49,7 +49,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 #### MEET.ONE 钱包用户开始激活侧链账户.
 #### MEET.ONE token 持有者开始从主网将代币迁移至侧链.
 
-### 2019-02-27 21:00:00 (UTC+8) 
+### 2019-02-27 21:00:00 (UTC+8) MEET.ONE 激活
 #### 侧链正式激活.
 #### 前 21 名超级节点开始出块.
 #### MEET.ONE 团队在侧链部署 airgrab 合约.[Airgrab源代码](https://github.com/meet-one/sidechain-airgrab)
