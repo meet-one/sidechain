@@ -16,7 +16,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 
 ### 26/02/2019 13:00 (GMT) MEET.ONE online.
 #### Genesis BP launch MEET.ONE production sidechain. [more details](./genesis) 
-#### Genesis BP share the peer node address, full node address, sidechain state snapshot file to the community.
+#### Genesis BP share the peer node address, full node address, sidechain state snapshot file, genesis.json to the community.
 #### BPs start to connect to sidechain network, register block producer and get votes.
 #### Opensource contract [producerjson](https://github.com/greymass/producerjson) from greymass will deploy to producers.m, this contract stores bp.json on chain.
 #### Opensource contract [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) from AlohaEOS will depoly to proxies.m, this contract stores proxy info on chain.
@@ -41,7 +41,7 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 
 ### 2019-02-26 21:00:00 (UTC+8) MEET.ONE 上线
 #### Genesis BP 启动侧链主网. [更多细节](./genesis)
-#### Genesis BP 对外公布 peer 节点地址, 全节点地址, 区块快照文件. 
+#### Genesis BP 对外公布 peer 节点地址, 全节点地址, 区块快照文件, genesis.json. 
 #### 超级节点开始同步区块, 注册 BP 信息, 从社区拿到投票.
 #### [producerjson](https://github.com/greymass/producerjson) 合约将会被部署到 producers.m 账号，该合约用于在链上保存 bp.json.
 #### [eos-proxyinfo](https://github.com/AlohaEOS/eos-proxyinfo) 合约将会被部署到 proxies.m 账号，该合约用于在链上保存投票代理信息.

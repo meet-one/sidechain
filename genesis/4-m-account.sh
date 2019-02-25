@@ -34,5 +34,6 @@ cleos get currency balance eosio.token foundation.m
 cleos get currency balance eosio.token bank.m
 cleos get currency balance eosio.token eosio.bpay
 cleos get currency balance eosio.token eosio.vpay
+cleos get currency balance eosio.token eosio
 
 
