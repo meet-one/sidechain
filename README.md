@@ -8,7 +8,6 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
-MEET.ONE Sidechain
 
 Chain Id:
 
