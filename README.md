@@ -4,8 +4,6 @@
 
 [技术白皮书](./technical-white-paper-CN.md)
 
-[Join Testnet](./testnet.md)
-
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
 
@@ -92,6 +90,7 @@ https://meetone.eossweden.eu/v1/chain/get_info
 http://api-meetone.eossf.net:8888/v1/chain/get_info
 https://meetone.eosphere.io/v1/chain/get_info
 https://meetone.eosn.io/v1/chain/get_info
+https://meetone.eosargentina.io/v1/chain/get_info
 ```
 
 Blockchain State Snapshot:
