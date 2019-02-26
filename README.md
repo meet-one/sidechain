@@ -8,6 +8,102 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
+MEET.ONE Sidechain
+
+Chain Id:
+
+```
+cfe6486a83bad4962f232d48003b1824ab5665c36778141034d75e57b956e422
+```
+
+Genesis Json:
+
+```
+wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
+``` 
+
+```
+{
+  "initial_timestamp": "2019-02-24T08:08:08.888",
+  "initial_key": "EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9",
+  "initial_configuration": {
+    "max_block_net_usage": 1048576,
+    "target_block_net_usage_pct": 1000,
+    "max_transaction_net_usage": 524288,
+    "base_per_transaction_net_usage": 12,
+    "net_usage_leeway": 500,
+    "context_free_discount_net_usage_num": 20,
+    "context_free_discount_net_usage_den": 100,
+    "max_block_cpu_usage": 200000,
+    "target_block_cpu_usage_pct": 1000,
+    "max_transaction_cpu_usage": 150000,
+    "min_transaction_cpu_usage": 100,
+    "max_transaction_lifetime": 3600,
+    "deferred_trx_expiration_window": 600,
+    "max_transaction_delay": 3888000,
+    "max_inline_action_size": 4096,
+    "max_inline_action_depth": 4,
+    "max_authority_depth": 6
+  }
+}
+```
+
+P2P List:
+```
+p2p-peer-address = peer1.meet.one:9876
+p2p-peer-address = peer2.meet.one:9876
+p2p-peer-address = peer3.meet.one:9876
+p2p-peer-address = peer1-meetone.eosphere.io:9876
+p2p-peer-address = meetone.eossweden.eu:8062
+p2p-peer-address = p2p-meetone.eosbeijing.one:6003
+p2p-peer-address = p2p.meetone.nytelos.com:8012
+p2p-peer-address = peer.meetone.alohaeos.com:9876
+p2p-peer-address = meetone.eosnairobi.io:9676
+p2p-peer-address = p2p-meetone.eossv.org:446
+p2p-peer-address = meetone.eosargentina.io:9876
+p2p-peer-address = p2p.meetone.eclipse24.io:9876
+p2p-peer-address = p2p-meetone.blckchnd.com:9876
+p2p-peer-address = meetone.eosvenezuela.io:9876
+p2p-peer-address = one-p2p.infinitybloc.io:9876
+p2p-peer-address = meetone.eosio.sg:9875
+p2p-peer-address = p2p-meetone.eossf.net:9876
+p2p-peer-address = www.blockbp.com:9875
+p2p-peer-address = www.dzbbp.com:9875
+p2p-peer-address = meetone.acroeos.one:9876
+p2p-peer-address = p2p-meetone.goingos.org:9876
+p2p-peer-address = meetone.atticlab.net:6667
+p2p-peer-address = meetone.nodepacific.com:9876
+p2p-peer-address = meetone.eostribe.io:9878
+p2p-peer-address = meetseed.ikuwara.com:9876
+p2p-peer-address = p2p.meetone.fy.xyz:9876
+p2p-peer-address = node-meetone.starteos.io:9876
+p2p-peer-address = meetone.eoscannon.io:19876
+p2p-peer-address = meetone.p2p.blockgo.vip:9899
+p2p-peer-address = 13.230.195.142:1234
+p2p-peer-address = meetone.eosn.io:9876
+```
+
+API List:
+```
+https://fullnode.meet.one/v1/chain/get_info
+https://api.meetone.eostribe.io/v1/chain/get_info
+https://meetseed.ikuwara.com:8889/v1/chain/get_info
+https://api.meetone.alohaeos.com/v1/chain/get_info
+https://meetone.eossweden.eu/v1/chain/get_info
+http://api-meetone.eossf.net:8888/v1/chain/get_info
+https://meetone.eosphere.io/v1/chain/get_info
+https://meetone.eosn.io/v1/chain/get_info
+```
+
+Blockchain State Snapshot:
+
+[Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
+
+Blockchain Blocks Snapshot:
+
+[Blocks List](https://storage.googleapis.com/eos-block-backups/)
+
+
 
 ## MEET.ONE sidechain production launch schedule:
 
