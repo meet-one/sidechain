@@ -35,6 +35,7 @@ eosio-cpp -contract=eosio.system -abigen eosio.system.cpp -o eosio.system.wasm -
 cleos set contract eosio ./ eosio.system.wasm eosio.system.abi -p eosio@active
 cleos push action eosio setpriv '["eosio", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
+cleos push action eosio setramrate '[1024]' -p eosio@active
 
 cd ../../eosio.msig/src
 eosio-cpp -contract=eosio.msig -abigen eosio.msig.cpp -o eosio.msig.wasm -I=/usr/local/include/ -I=../include
