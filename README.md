@@ -19,6 +19,10 @@ Genesis Json:
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
 ``` 
 
+Sidechain Explorer:
+
+[EOSX for MEET.ONE](https://meetone.eosx.io/)
+
 P2P List:
 ```
 p2p-peer-address = peer1.meet.one:9876
