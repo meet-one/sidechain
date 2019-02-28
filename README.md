@@ -25,6 +25,8 @@ Sidechain Explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
 [Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
 
+[Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
+
 P2P List:
 ```
 p2p-peer-address = peer1.meet.one:9876
