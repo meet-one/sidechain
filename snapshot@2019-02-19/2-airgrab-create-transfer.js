@@ -143,20 +143,24 @@ function createShellScript() {
   ws.write('echo Run "cleos wallet unlock" first\n')
   ws.write('payer="' + payer + '"\n')
 
+  let totalAirgrab = 0.0
+
   rl.on('line', (line) => {
     if (eosfmt.isName(line)) {
       if (map.has(line)) {
         let mainnetAccount = map.get(line)
         if (balanceMap.has(mainnetAccount)) {
           let mainnetBalance = balanceMap.get(mainnetAccount)
-          let balance = (mainnetBalance / 2).toFixed(4)
+          let balance = parseFloat((mainnetBalance / 2).toFixed(4))
           if (balance == 0.0) {
             console.log('Account has no balance: ' + line + ', '
               + mainnetAccount)
           } else {
-            ws.write('cleos transfer $payer ' + line + ' "' + balance
-              + ' MEETONE" "airgrab: ' + mainnetAccount + ','
-              + mainnetBalance.toFixed(4) + ' EOS"\n')
+            totalAirgrab += balance
+            let script = 'cleos transfer $payer ' + line + ' "'
+              + balance.toFixed(4) + ' MEETONE" "airgrab: ' + mainnetAccount
+              + ',' + mainnetBalance.toFixed(4) + ' EOS"'
+            ws.write(script + ' | ' + script + ' | ' + script + '\n')
           }
         } else {
           console.error('Account name not in balance-file: ' + line)
@@ -171,5 +175,7 @@ function createShellScript() {
 
   rl.on('close', () => {
     ws.close()
+
+    console.log('Total balance: ' + totalAirgrab.toFixed(4))
   })
 }
