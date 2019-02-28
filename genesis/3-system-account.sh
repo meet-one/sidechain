@@ -1,18 +1,21 @@
-# 3. Create eosio.*
+# 3. System accounts and system contracts
+
+Create eosio.*
 
 cd ~
-cleos create account eosio eosio.token EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.msig EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.ram EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.ramfee EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.stake EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.bpay EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.vpay EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.wrap EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
-cleos create account eosio eosio.bios EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj EOS7Z5ck4434RWJWzpBtZvskM2xfckqRZvpFbJoPMedrb91XsGqxj
+cleos create account eosio eosio.token EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.msig EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.ram EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.ramfee EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.stake EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.bpay EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.vpay EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.wrap EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.bios EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
+cleos create account eosio eosio.abp EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9 EOS8iANEmGQ6ExAP22KF4vRu9hPvMNgHmVFyMMF5UspNMGzyukhV9
 
 
-# 4. Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
+Deploy eosio.token, eosio.system, eosio.msig, eosio.wrap, eosio.bios
 
 [Install eosio.cdt](https://github.com/EOSIO/eosio.cdt)
 
@@ -32,6 +35,7 @@ eosio-cpp -contract=eosio.system -abigen eosio.system.cpp -o eosio.system.wasm -
 cleos set contract eosio ./ eosio.system.wasm eosio.system.abi -p eosio@active
 cleos push action eosio setpriv '["eosio", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
+cleos push action eosio setramrate '[1024]' -p eosio@active
 
 cd ../../eosio.msig/src
 eosio-cpp -contract=eosio.msig -abigen eosio.msig.cpp -o eosio.msig.wasm -I=/usr/local/include/ -I=../include
