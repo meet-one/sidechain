@@ -63,6 +63,8 @@ p2p-peer-address = meetone.eoscannon.io:19876
 p2p-peer-address = meetone.p2p.blockgo.vip:9899
 p2p-peer-address = 13.230.195.142:1234
 p2p-peer-address = meetone.eosn.io:9876
+p2p-peer-address = 47.52.135.155:9876
+p2p-peer-address = 47.244.141.55:9876
 ```
 
 API list:
