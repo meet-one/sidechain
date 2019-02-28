@@ -19,10 +19,9 @@ Genesis Json:
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
 ``` 
 
-Sidechain Explorer:
+Sidechain Explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
-[EOSX for MEET.ONE](https://meetone.eosx.io/)
-
+[MEET.ONE sidechain mainnet status monitor](https://t.me/meetonemainnetstatus)
 
 [Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
 
