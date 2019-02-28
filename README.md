@@ -6,6 +6,9 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
+[Source code of system contracts](https://github.com/meet-one/eosio.contracts)
+
+[Source code of eosio](https://github.com/meet-one/eosio)
 
 Chain Id:
 
