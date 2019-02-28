@@ -160,7 +160,7 @@ function createShellScript() {
             let script = 'cleos transfer $payer ' + line + ' "'
               + balance.toFixed(4) + ' MEETONE" "airgrab: ' + mainnetAccount
               + ',' + mainnetBalance.toFixed(4) + ' EOS"'
-            ws.write(script + ' | ' + script + ' | ' + script + '\n')
+            ws.write(script + ' || ' + script + ' || ' + script + '\n')
           }
         } else {
           console.error('Account name not in balance-file: ' + line)
