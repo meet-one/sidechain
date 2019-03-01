@@ -30,6 +30,10 @@ Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
 [Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
 
+Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
+
+Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-block-backups/)
+
 P2P list:
 ```
 p2p-peer-address = peer1.meet.one:9876
@@ -79,15 +83,6 @@ https://meetone.eosphere.io/v1/chain/get_info
 https://meetone.eosn.io/v1/chain/get_info
 https://meetone.eosargentina.io/v1/chain/get_info
 ```
-
-Blockchain state snapshot:
-
-[Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
-
-Blockchain blocks snapshot:
-
-[Blocks List](https://storage.googleapis.com/eos-block-backups/)
-
 
 ### Register block producer info
 
