@@ -6,9 +6,22 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
+Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
+
+Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
+
+Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-block-backups/)
+
 [Source code of system contracts](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
 [Source code of eosio](https://github.com/meet-one/eos)
+
+[MEET.ONE sidechain mainnet status monitor](https://t.me/meetonemainnetstatus)
+
+[Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
+
+[Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
+
 
 Chain id:
 
@@ -21,18 +34,6 @@ Genesis json:
 ```
 wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
 ``` 
-
-Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
-
-[MEET.ONE sidechain mainnet status monitor](https://t.me/meetonemainnetstatus)
-
-[Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
-
-[Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
-
-Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
-
-Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-block-backups/)
 
 P2P list:
 ```
