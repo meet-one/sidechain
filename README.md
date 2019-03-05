@@ -23,7 +23,7 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-blo
 [Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
 
 
-System requirements: 4 CPU, 16 GB RAM
+System requirements for nodeos: 4 CPU, 16 GB RAM
 
 
 Chain id:
