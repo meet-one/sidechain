@@ -20,8 +20,6 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-blo
 
 [Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
 
-[Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
-
 
 System requirements for nodeos: 4 CPU, 16 GB RAM
 
