@@ -6,20 +6,15 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
+Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
-Chain Id:
+Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
 
-```
-cfe6486a83bad4962f232d48003b1824ab5665c36778141034d75e57b956e422
-```
+Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-block-backups/)
 
-Genesis Json:
+[Source code of system contracts](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
-```
-wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
-``` 
-
-Sidechain Explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
+[Source code of eosio](https://github.com/meet-one/eos)
 
 [MEET.ONE sidechain mainnet status monitor](https://t.me/meetonemainnetstatus)
 
@@ -27,7 +22,23 @@ Sidechain Explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
 [Click me to airgrab on MEET.ONE sidechain](https://github.com/meet-one/sidechain-airgrab)
 
-P2P List:
+
+System requirements for nodeos: 4 CPU, 16 GB RAM
+
+
+Chain id:
+
+```
+cfe6486a83bad4962f232d48003b1824ab5665c36778141034d75e57b956e422
+```
+
+Genesis json:
+
+```
+wget https://raw.githubusercontent.com/meet-one/sidechain/master/genesis/config-dir/genesis.json
+``` 
+
+P2P list:
 ```
 p2p-peer-address = peer1.meet.one:9876
 p2p-peer-address = peer2.meet.one:9876
@@ -60,9 +71,13 @@ p2p-peer-address = meetone.eoscannon.io:19876
 p2p-peer-address = meetone.p2p.blockgo.vip:9899
 p2p-peer-address = 13.230.195.142:1234
 p2p-peer-address = meetone.eosn.io:9876
+p2p-peer-address = 47.244.154.93:9876
+p2p-peer-address = 47.244.152.44:9876
+p2p-peer-address = 47.244.141.55:9876
+p2p-peer-address = meetone.genereos.io:19876
 ```
 
-API List:
+API list:
 ```
 https://fullnode.meet.one/v1/chain/get_info
 https://api.meetone.eostribe.io/v1/chain/get_info
@@ -74,15 +89,6 @@ https://meetone.eosphere.io/v1/chain/get_info
 https://meetone.eosn.io/v1/chain/get_info
 https://meetone.eosargentina.io/v1/chain/get_info
 ```
-
-Blockchain State Snapshot:
-
-[Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
-
-Blockchain Blocks Snapshot:
-
-[Blocks List](https://storage.googleapis.com/eos-block-backups/)
-
 
 ### Register block producer info
 
