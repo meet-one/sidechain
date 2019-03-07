@@ -47,6 +47,9 @@ function succeeded(res) {
   if (res.rows) {
     let buffer = ''
     res.rows.forEach(e => {
+      if (e.owner == '') {
+        console.log('----', e.id)
+      }
       if (set.has(e.owner)) {
         throw new  Error('Duplicated: ' + e.owner)
       }

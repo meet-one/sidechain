@@ -13,14 +13,13 @@
 
 const SEPARATOR = ','
 
-const DEFAULT_OUTPUT_FILE_NAME = '2-airgrab-transfer.sh'
+const DEFAULT_OUTPUT_FILE_NAME = '2-airgrab.csv'
 
 let inputPath = ''
 let mapFilePath = ''
 let balanceFilePath = ''
 let outputPath = ''
 let payer = ''
-let excludeFilename = ''
 
 const eosfmt = require('eosjs').modules.format
 
@@ -37,7 +36,6 @@ const eosfmt = require('eosjs').modules.format
       mapFilePath = mapFile
       balanceFilePath = balancePath
     })
-    .option('-e, --exclude <FILE>', 'File that contains excluded accounts')
     .option('-p, --payer <TEXT>', 'Set payer')
     .option('-o, --output <FILE>', 'Write to FILE, will be overwritten!')
     .on('--help', function () {
@@ -52,11 +50,6 @@ const eosfmt = require('eosjs').modules.format
   console.log('Input file: ' + inputPath)
   console.log('Map file: ' + mapFilePath)
   console.log('Balance file: ' + balanceFilePath)
-
-  if (po.exclude) {
-    excludeFilename = po.exclude
-    console.log('Exclude: ' + excludeFilename)
-  }
 
   if (po.payer) {
     payer = po.payer
@@ -84,7 +77,6 @@ const readline = require('readline')
 // key = sidechain account, value = mainnet account
 const map = new Map()
 const balanceMap = new Map()
-const excludeSet = new Set()
 
 readMap()
 
@@ -134,11 +126,7 @@ function readBalance() {
 
   rl.on('close', () => {
     console.log('Balance size: ' + balanceMap.size)
-    if (excludeFilename) {
-      readExcludeFile()
-    } else {
-      createShellScript()
-    }
+    createShellScript()
   })
 }
 
@@ -152,17 +140,12 @@ function createShellScript() {
     , { flags: 'w', encoding: 'utf8', autoClose: true }
   )
 
-  ws.write('echo Run "cleos wallet unlock" first\n')
-  ws.write('payer="' + payer + '"\n')
+  //ws.write('echo Run "cleos wallet unlock" first\n')
+  //ws.write('payer="' + payer + '"\n')
 
   let totalAirgrab = 0.0
 
   rl.on('line', (line) => {
-    if (excludeSet.has(line)) {
-      console.log('Exclude account: ' + line)
-      return
-    }
-
     if (eosfmt.isName(line)) {
       if (map.has(line)) {
         let mainnetAccount = map.get(line)
@@ -174,10 +157,10 @@ function createShellScript() {
               + mainnetAccount)
           } else {
             totalAirgrab += balance
-            let script = 'cleos transfer $payer ' + line + ' "'
-              + balance.toFixed(4) + ' MEETONE" "airgrab: ' + mainnetAccount
-              + ',' + mainnetBalance.toFixed(4) + ' EOS"'
-            ws.write(script + ' || ' + script + ' || ' + script + '\n')
+            let script = line + ','
+              + balance.toFixed(4) + ',' + mainnetAccount
+              + ',' + mainnetBalance.toFixed(4)
+            ws.write(script + '\n')
           }
         } else {
           console.error('Account name not in balance-file: ' + line)
@@ -194,21 +177,5 @@ function createShellScript() {
     ws.close()
 
     console.log('Total balance: ' + totalAirgrab.toFixed(4))
-  })
-}
-
-function readExcludeFile(path) {
-  const rs = fs.createReadStream(excludeFilename
-    , { encoding: 'utf8', autoClose: true }
-  )
-  const rl = readline.createInterface({ input: rs, crlfDelay: Infinity })
-
-  rl.on('line', (line) => {
-    excludeSet.add(line)
-  })
-  
-  rl.on('close', () => {
-    console.log('Number of excluded accounts: ' + excludeSet.size)
-    createShellScript()
   })
 }
