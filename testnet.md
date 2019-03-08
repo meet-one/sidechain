@@ -1,6 +1,6 @@
 # MEET.ONE Sidechain Testnet
 
-### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
+### For DApp Developers: [https://developers.eos.io](https://developers.eos.io)
 
 #### Create new account
 
