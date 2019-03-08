@@ -1,67 +1,24 @@
-# MEET.ONE Sidechain 
+# MEET.ONE Sidechain Testnet
 
-[Technical White Paper](./technical-white-paper-EN.md)
+### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
 
-[技术白皮书](./technical-white-paper-CN.md)
-
-Telegram group for sidechain BPs: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
-
-## Testnet
-
-### Initial accounts
+#### Create new account
 
 ```
-eosio
-eosio.token
-eosio.msig
-eosio.ram
-eosio.ramfee
-eosio.stake
-eosio.bpay
-eosio.vpay
-eosio.wrap
-eosio.bios
-m
-meetone.m
-bank.m
-foundation.m
-producers.m
-proxies.m
+http://35.236.182.224:6677/newaccount?name=testnet111.m
 ```
 
-### Initial contracts
+#### Get 1000 MEETONE.
 
 ```
-eosio.system
-eosio.token
-eosio.msig
-eosio.wrap
-eosio.bios
-bank.m
-producers.m
-proxies.m
+http://35.236.182.224:6677/get_token?name=testnet111.m
 ```
-
-
-### Snapshot
-
-Get synced to the network within a minute.
-
-### Monitor
-
-Sidechain monitoring tool.
-
-[Testnet status channel - warning for missed blocks](https://t.me/joinchat/AAAAAFJ5qc9n7TOmNJnMAA)
 
 ### Browser
 
 Sidechain browser.
 
 [EOSX for sidechain testnet](https://meetone-test.eosx.io/)
-
-### Wallet
-
-MEET.ONE Wallet APP.
 
 
 ### Basic info
@@ -198,16 +155,3 @@ submit proxy info:
 cleos -u http://sidechain-test.meet.one:8888 push action proxies.m set '["proxy.m","MEET.ONE Proxy","MEET.ONE connecting users","Community Engagement,Technical Proficiency,Building Tools/Dapps for the Community,Education,Cooperation,Geographical location.","MEET.ONE is an EOS block producer candidate from Singapore. On June 15, 2018, MEET.ONE was successfully elected as one of genesis block producers.MEET.ONE is committed to the development of EOS ecology portal applications. In the past few months, MEET.ONE has offered the majority of the users outstanding EOS portal presentations to realize various functions of the EOS ecosystem. At the same time, we have established a huge EOS community and designed a series of incentive mechanisms to enable the community members to actively study, enlarge the EOS ecology and build a solid foundation of consent;In the future, we will initiate the MEET.ONE side chain, set up a foundation to screen and incubate outstanding Dapps in the EOS ecosystem, and become an incubator and filter for the EOS application ecology.Becoming a block producer was just the beginning. MEET.ONE never stopped its progress. We will contribute all our strength and work with EOS supporters around the world to build a healthy EOS ecosystem.","https://meet.one","https://raw.githubusercontent.com/meet-one/website/master/meetone-256.png","https://t.me/MeetOneEnglish","https://steemit.com/@meetone","https://twitter.com/MeetDotOne",""]' -p proxy.m
 ```
 
-### For EOS Developers: [https://developers.eos.io](https://developers.eos.io)
-
-#### Create new account
-
-```
-http://35.236.182.224:6677/newaccount?name=testnet111.m
-```
-
-#### Get 1000 MEETONE.
-
-```
-http://35.236.182.224:6677/get_token?name=testnet111.m
-```
