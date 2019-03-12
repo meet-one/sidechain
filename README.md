@@ -74,6 +74,7 @@ p2p-peer-address = 47.244.154.93:9876
 p2p-peer-address = 47.244.152.44:9876
 p2p-peer-address = 47.244.141.55:9876
 p2p-peer-address = meetone.genereos.io:19876
+p2p-peer-address = meetone.seed1.eosdublin.io:9876
 ```
 
 API list:
