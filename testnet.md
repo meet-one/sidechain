@@ -48,16 +48,9 @@ p2p-peer-address = sidechain-test.meet.one:9876
 
 ```
 http://sidechain-test.meet.one:8888/v1/chain/get_info
-http://sidechain-test2.meet.one:8888/v1/chain/get_info
 https://meetone-testnet.eosphere.io/v1/chain/get_info
 http://95.179.135.231:8888/v1/chain/get_info
 http://95.216.114.172:8888/v1/chain/get_info
-```
-
-### History node list (filter-on = *)
-
-```
-http://sidechain-test-history.meet.one:8888/v1/chain/get_info
 ```
 
 ### Chain id
