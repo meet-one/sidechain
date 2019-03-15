@@ -91,8 +91,8 @@ git submodule update --init --recursive
 ./eosio_build.sh -s MEETONE
 cd build
 sudo make install
-echo 'PATH=$PATH:/usr/local/eosio/bin/' >> ~/.profile
-source ~/.profile
+echo 'PATH=$PATH:/usr/local/eosio/bin/' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 
