@@ -28,6 +28,8 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-blo
 
 [Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
 
+[Developer Portal](https://developers.eos.io)
+
 System requirements for nodeos: 4 CPU, 16 GB RAM
 
 
