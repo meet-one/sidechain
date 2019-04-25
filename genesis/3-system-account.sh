@@ -31,7 +31,7 @@ cleos push action eosio.token create '[ "eosio", "10000000000.0000 MEETONE"]' -p
 cleos push action eosio.token issue '[ "eosio", "10000000000.0000 MEETONE", "memo" ]' -p eosio@active
 
 cd ../../eosio.system/src
-eosio-cpp -contract=eosio.system -abigen eosio.system.cpp -o eosio.system.wasm -I=/usr/local/include/ -I=../include -I=../../eosio.token/include
+eosio-cpp -contract=eosio.system -abigen eosio.system.cpp -o eosio.system.wasm -I=/usr/local/include/ -I=../include -I=../../eosio.token/include -I=./
 cleos set contract eosio ./ eosio.system.wasm eosio.system.abi -p eosio@active
 cleos push action eosio setpriv '["eosio", 1]' -p eosio@active
 cleos push action eosio init '[0,"4,MEETONE"]' -p eosio@active
