@@ -24,6 +24,8 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone
 
 [History API Documentation](https://documenter.getpostman.com/view/3895747/S11Ey1cw)
 
+[Hyperion History API](https://meetone.hyperion.eosrio.io/v2/docs/index.html)
+
 [MEETONE sidechain launch schedule](./launch-schedule.md)
 
 [Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
