@@ -8,9 +8,9 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 
 Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
 
-Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/eos-snapshot-backups/)
+Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/meetone-snapshot-backups/)
 
-Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/eos-block-backups/)
+Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone-block-backups/)
 
 [Source code of system contracts](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
