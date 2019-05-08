@@ -5,13 +5,13 @@
 #### Create new account
 
 ```
-http://sidechain-test.meet.one:6677/newaccount?name=testnet111.m
+http://34.80.195.33:6677/newaccount?name=testnet111.m
 ```
 
 #### Get 1000 MEETONE.
 
 ```
-http://sidechain-test.meet.one:6677/get_token?name=testnet111.m
+http://34.80.195.33:6677/get_token?name=testnet111.m
 ```
 
 ### Browser
