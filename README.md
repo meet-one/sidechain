@@ -8,6 +8,16 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 
 Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/) & [Bloks for MEET.ONE](https://meetone.bloks.io/)
 
+[Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
+
+[Developer Portal](https://developers.eos.io)
+
+[History API Documentation](https://documenter.getpostman.com/view/3895747/S11Ey1cw)
+
+[Hyperion History API](https://meetone.hyperion.eosrio.io/v2/docs/index.html)
+
+[Sidechain Testnet](https://github.com/meet-one/sidechain/blob/master/testnet.md)
+
 Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/meetone-snapshot-backups/)
 
 Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone-block-backups/)
@@ -20,17 +30,8 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone
 
 [Click me to transfer MEETONE token from EOS mainnet to MEET.ONE sidechain](https://github.com/meet-one/bank.m)
 
-[Sidechain Testnet](https://github.com/meet-one/sidechain/blob/master/testnet.md)
-
-[History API Documentation](https://documenter.getpostman.com/view/3895747/S11Ey1cw)
-
-[Hyperion History API](https://meetone.hyperion.eosrio.io/v2/docs/index.html)
-
 [MEETONE sidechain launch schedule](./launch-schedule.md)
 
-[Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
-
-[Developer Portal](https://developers.eos.io)
 
 System requirements for nodeos: 4 CPU, 16 GB RAM
 
