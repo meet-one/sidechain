@@ -6,7 +6,7 @@
 
 Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg)
 
-Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/)
+Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/) & [Blocks for MEET.ONE](https://meetone.bloks.io/)
 
 Blockchain state snapshot: [Snapshot list](https://storage.googleapis.com/meetone-snapshot-backups/)
 
