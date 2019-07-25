@@ -8,9 +8,9 @@ Telegram group for sidechain: [https://t.me/joinchat/Gwj0R0uBIT3w4a3GSGu9pg](htt
 
 Sidechain explorer: [EOSX for MEET.ONE](https://meetone.eosx.io/) & [Bloks for MEET.ONE](https://meetone.bloks.io/)
 
-[Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
-
 [Developer Portal](https://developers.eos.io)
+
+[Step-by-step guide to learning eosjs API for integration with EOSIO-based blockchains](https://github.com/meet-one/eosjs-guide)
 
 [History API Documentation](https://documenter.getpostman.com/view/3895747/S11Ey1cw)
 
