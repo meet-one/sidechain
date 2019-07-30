@@ -1,4 +1,4 @@
-# Deploy eosio.contracts meetone-1.1 on MEETONE Mainnet
+# Upgrade eosio.contracts meetone-1.1 on MEETONE Mainnet
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ Update `expiration` to a time that sufficiently far in the future to give enough
 }
 ```
 
-Deploy eosio.system proposal:
+## Upgrade eosio.system proposal:
 
 The `upgrade_system_contract` proposal on MEETONE sidechin Testnet:
 
@@ -90,14 +90,14 @@ cleos get table eosio.msig meetone.m approvals
 ### Approve proposal
 
 ```
-cleos multisig approve meetone.m removesaving '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
+cleos multisig approve meetone.m upgrade_system_contract '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
 ```
 
-### Original system contract on MEETONE Mainnet: (eosio.contracts-meetone-1.0)[https://github.com/meet-one/eosio.contracts/tree/meetone-1.0]
+### Original system contract on MEETONE Mainnet: [eosio.contracts-meetone-1.0](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
 eosio.system.wasm hash: 2a3088ffb4d8ddec4b0ecdb5c9bec3e8e5c24b5ad33664e695e0f76311afb03e
 
-### New system contract: (eosio.contracts-meetone-1.1)[https://github.com/meet-one/eosio.contracts/tree/meetone-1.1]
+### New system contract: [eosio.contracts-meetone-1.1](https://github.com/meet-one/eosio.contracts/tree/meetone-1.1)
 
 eosio.system.wasm hash: cc5a341e4a66eeb0a5d988174f75ab7b1692079271cc992774fc8bbb0b7e4aa1
 
