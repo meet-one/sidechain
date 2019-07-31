@@ -1,6 +1,6 @@
 # Overview
 
-The upgradesystem proposal upgrade system contract to meetone-1.1.
+The upgrade_system_contract proposal upgrade system contract to meetone-1.1.
 
 This proposal makes one change to the system:
 
@@ -91,7 +91,7 @@ Update `expiration` to a time that sufficiently far in the future to give enough
 }
 ```
 
-### Original system contract on MEETONE Mainnet: [eosio.contracts-meetone-1.0](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
+### Original system contract on MEET.ONE Mainnet: [eosio.contracts-meetone-1.0](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
 eosio.system.wasm hash: 2a3088ffb4d8ddec4b0ecdb5c9bec3e8e5c24b5ad33664e695e0f76311afb03e
 
