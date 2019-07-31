@@ -1,8 +1,33 @@
-# Proposal for upgrade system contract to meetone-1.1
+# Overview
 
-## Prerequisites
+The upgradesystem proposal upgrade system contract to meetone-1.1.
 
-### Build contract
+This proposal makes one change to the system:
+
+1. merge eosio.contract 1.7.0 to upgrade consensus protocol.
+
+### Review proposal
+
+```
+cleos multisig review meetone.m upgrade_system_contract
+```
+
+### Proposal Status
+
+```
+cleos get table eosio.msig meetone.m approvals
+```
+
+### Approve proposal
+
+```
+cleos multisig approve meetone.m upgrade_system_contract '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
+```
+
+## [Compare code changes](https://github.com/meet-one/eosio.contracts/compare/v1.7.0...meet-one:meetone-1.1)
+
+
+# Build system contract
 
 Use [eosio.cdt 1.6.2](https://github.com/EOSIO/eosio.cdt) and [eosio 1.8.x](https://github.com/meet-one/eos) to build eosio.contracts meetone-1.1 smart contract.
 ```
@@ -14,8 +39,6 @@ git checkout meetone-1.1
 
 ./build.sh
 ```
-
-## [Compare code changes](https://github.com/meet-one/eosio.contracts/compare/v1.7.0...meet-one:meetone-1.1)
 
 ## Upgrade eosio.system/eosio.bios contracts
 
@@ -66,29 +89,6 @@ Update `expiration` to a time that sufficiently far in the future to give enough
   "signatures": [],
   "context_free_data": []
 }
-```
-
-## Upgrade eosio.system proposal:
-
-The `upgrade_system_contract` proposal on MEETONE Mainnet:
-
-
-### Review proposal
-
-```
-cleos multisig review meetone.m upgrade_system_contract
-```
-
-### Proposal Status
-
-```
-cleos get table eosio.msig meetone.m approvals
-```
-
-### Approve proposal
-
-```
-cleos multisig approve meetone.m upgrade_system_contract '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
 ```
 
 ### Original system contract on MEETONE Mainnet: [eosio.contracts-meetone-1.0](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
