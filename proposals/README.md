@@ -35,7 +35,7 @@ Update `expiration` to a time that sufficiently far in the future to give enough
 
 ```
 {
-  "expiration": "2019-08-30T20:00:20",
+  "expiration": "2019-08-31T21:00:00",
   "ref_block_num": 0,
   "ref_block_prefix": 0,
   "max_net_usage_words": 0,
@@ -70,10 +70,8 @@ Update `expiration` to a time that sufficiently far in the future to give enough
 
 ## Upgrade eosio.system proposal:
 
-The `upgrade_system_contract` proposal on MEETONE sidechin Testnet:
-
-
 The `upgrade_system_contract` proposal on MEETONE Mainnet:
+
 
 ### Review proposal
 
