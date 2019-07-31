@@ -4,7 +4,7 @@ The upgradesystem proposal upgrade system contract to meetone-1.1.
 
 This proposal makes one change to the system:
 
-1. merge eosio.contract 1.7.0 to upgrade consensus protocol.
+1. merge eosio.contract 1.7.0 to meetone-1.0.
 
 ### Review proposal
 
