@@ -1,4 +1,4 @@
-# Upgrade eosio.contracts meetone-1.1 on MEETONE Mainnet
+# Proposal for upgrade eosio.contracts meetone-1.1 on MEET.ONE Mainnet
 
 ## Prerequisites
 
