@@ -1,6 +1,6 @@
 # Overview
 
-The upgrade_system_contract proposal upgrade system contract to meetone-1.1.
+The `upgrade_system_contract` proposal upgrade system contract to meetone-1.1.
 
 This proposal makes one change to the system:
 
