@@ -32,7 +32,10 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone
 
 [MEETONE sidechain launch schedule](./launch-schedule.md)
 
-[Upgrade eosio.contracts meetone-1.1 on MEETONE Mainnet](./proposals/README.md)
+
+## Proposals
+
+[Proposal for upgrade eosio.contracts meetone-1.1 on MEET.ONE Mainnet](./proposals/README.md)
 
 System requirements for nodeos: 4 CPU, 16 GB RAM
 
