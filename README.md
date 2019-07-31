@@ -35,7 +35,7 @@ Blockchain blocks snapshot: [Blocks List](https://storage.googleapis.com/meetone
 
 ### Proposals
 
-[Proposal for upgrade system contract to meetone-1.1](./proposals/README.md)
+[Proposal for upgrade system contract to meetone-1.1](./proposals)
 
 ### Deploy nodeos
 
