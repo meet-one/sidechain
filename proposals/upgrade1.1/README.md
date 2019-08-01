@@ -1,6 +1,6 @@
 # Overview
 
-The upgrade_system_contract proposal upgrade system contract to meetone-1.1.
+The upgrade1.1 proposal upgrade system contract to meetone-1.1.
 
 This proposal makes one change to the system:
 
@@ -9,7 +9,7 @@ This proposal makes one change to the system:
 ### Review proposal
 
 ```
-cleos multisig review meetone.m upgrade_system_contract
+cleos multisig review meetone.m upgrade1.1
 ```
 
 ### Proposal Status
@@ -21,7 +21,7 @@ cleos get table eosio.msig meetone.m approvals
 ### Approve proposal
 
 ```
-cleos multisig approve meetone.m upgrade_system_contract '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
+cleos multisig approve meetone.m upgrade1.1 '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
 ```
 
 ## [Compare code changes](https://github.com/meet-one/eosio.contracts/compare/v1.7.0...meet-one:meetone-1.1)
@@ -51,7 +51,7 @@ cd build/contracts
 
 shasum -a 256 eosio.system/eosio.system.wasm
 
-cleos set contract eosio eosio.system -p eosio -s -j -d > upgrade_system_contract.json
+cleos set contract eosio eosio.system -p eosio -s -j -d > upgrade1.1.json
 ```
 
 Update `expiration` to a time that sufficiently far in the future to give enough time to collect all the necessary signatures, set `ref_block_num` and `ref_block_prefix` to 0, you will get a transaction like this:
