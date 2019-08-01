@@ -9,19 +9,19 @@ This proposal makes one change to the system:
 ### Review proposal
 
 ```
-cleos multisig review meetone.m upgrade1.1
+cleos -u https://fullnode.meet.one multisig review meetone.m upgrade1.1
 ```
 
 ### Proposal Status
 
 ```
-cleos get table eosio.msig meetone.m approvals
+cleos -u https://fullnode.meet.one get table eosio.msig meetone.m approvals2
 ```
 
 ### Approve proposal
 
 ```
-cleos multisig approve meetone.m upgrade1.1 '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
+cleos -u https://fullnode.meet.one multisig approve meetone.m upgrade1.1 '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
 ```
 
 ## [Compare code changes](https://github.com/meet-one/eosio.contracts/compare/v1.7.0...meet-one:meetone-1.1)
