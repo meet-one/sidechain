@@ -1,6 +1,6 @@
 # Overview
 
-The upgrade1.1 proposal upgrade system contract to meetone-1.1.
+The `upgrade1.1` proposal upgrade system contract to meetone-1.1 to enable consensus protocol.
 
 This proposal makes one change to the system:
 
@@ -93,9 +93,20 @@ Update `expiration` to a time that sufficiently far in the future to give enough
 
 ### Original system contract on MEET.ONE Mainnet: [eosio.contracts-meetone-1.0](https://github.com/meet-one/eosio.contracts/tree/meetone-1.0)
 
+```
+ubuntu 18.04
+eosio.cdt 1.5.0
+```
+
 eosio.system.wasm hash: 2a3088ffb4d8ddec4b0ecdb5c9bec3e8e5c24b5ad33664e695e0f76311afb03e
 
 ### New system contract: [eosio.contracts-meetone-1.1](https://github.com/meet-one/eosio.contracts/tree/meetone-1.1)
+
+
+```
+ubuntu 18.04
+eosio.cdt 1.6.2
+```
 
 eosio.system.wasm hash: cc5a341e4a66eeb0a5d988174f75ab7b1692079271cc992774fc8bbb0b7e4aa1
 
