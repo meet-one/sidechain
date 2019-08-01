@@ -1,4 +1,3 @@
-
 [
   {"actor": "acroeos.m", "permission": "active"},
   {"actor": "alohaeos.m", "permission": "active"},
@@ -30,5 +29,5 @@
   {"actor": "sheos.m", "permission": "active"},
   {"actor": "telosdac.m", "permission": "active"},
   {"actor": "meetarabia.m", "permission": "active"},
-  {"actor": "meetone.m", "permission": "active"}
+  {"actor": "meetone.m", "permission": "msig"}
 ]
