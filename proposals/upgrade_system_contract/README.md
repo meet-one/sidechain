@@ -1,6 +1,6 @@
 # Overview
 
-The `upgrade_system_contract` proposal upgrade system contract to meetone-1.1.
+The `upgrade_system_contract` proposal upgrade system contract to meetone-1.1 to enable consensus protocol.
 
 This proposal makes one change to the system:
 
