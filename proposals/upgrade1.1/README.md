@@ -6,6 +6,8 @@ This proposal makes one change to the system:
 
 1. merge eosio.contract 1.7.0 to meetone-1.0.
 
+[Proposal status](https://meetone.eosx.io/tools/msig/proposal?proposer=meetone.m&name=upgrade1.1)
+
 ### Review proposal
 
 ```
