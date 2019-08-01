@@ -42,9 +42,7 @@ git checkout meetone-1.1
 ./build.sh
 ```
 
-## Upgrade eosio.system/eosio.bios contracts
-
-Take eosio.system for example:
+## Upgrade eosio.system contracts
 
 Generate the unsigned transaction which upgrade the system contract:
 
@@ -112,4 +110,23 @@ eosio.cdt 1.6.2
 
 eosio.system.wasm hash: cc5a341e4a66eeb0a5d988174f75ab7b1692079271cc992774fc8bbb0b7e4aa1
 
-Use the same approach above to generate transaction payload for eosio.bios. 
+
+
+## Ricardian Assets
+
+[account.png](https://meet.one/ricardian_assets/eosio.contracts/icons/account.png)
+[account.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/account.svg)
+[admin.png](https://meet.one/ricardian_assets/eosio.contracts/icons/admin.png)
+[admin.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/admin.svg)
+[multisig.png](https://meet.one/ricardian_assets/eosio.contracts/icons/multisig.png)
+[multisig.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/multisig.svg)
+[resource.png](https://meet.one/ricardian_assets/eosio.contracts/icons/resource.png)
+[resource.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/resource.svg)
+[rex.png](https://meet.one/ricardian_assets/eosio.contracts/icons/rex.png)
+[rex.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/rex.svg)
+[token.png](https://meet.one/ricardian_assets/eosio.contracts/icons/token.png)
+[token.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/token.svg)
+[transfer.png](https://meet.one/ricardian_assets/eosio.contracts/icons/transfer.png)
+[transfer.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/transfer.svg)
+[voting.png](https://meet.one/ricardian_assets/eosio.contracts/icons/voting.png)
+[voting.svg](https://meet.one/ricardian_assets/eosio.contracts/icons/voting.svg)
