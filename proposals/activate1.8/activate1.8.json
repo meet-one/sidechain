@@ -1,0 +1,122 @@
+{
+  "expiration": "2019-08-31T21:00:00",
+  "ref_block_num": 0,
+  "ref_block_prefix": 0,
+  "max_net_usage_words": 0,
+  "max_cpu_usage_ms": 0,
+  "delay_sec": 0,
+  "context_free_actions": [],
+  "actions": [{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "0ec7e080177b2c02b278d5088611686b49d739925a92d9bfcacd7fc6b74053bd"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "2652f5f96006294109b3dd0bbde63693f55324af452b799ee137a81a905eed25"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "ef43112c6543b88db2283a2e077278c315ae2c84719a8b25f25cc88565fbea99"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "4a90c00d55454dc5b059055ca213579c6ea856967712a56017487886a4d4cc0f"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "4e7bf348da00a945489b2a681749eb56f5de00b900014e137ddae39f48f69d67"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "68dcaa34c0517d19666e6b33add67351d8c5f69e999ca1e37931bc410a297428"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "8ba52fe7a3956c5cd3a656a3174b931d3bb2abb45578befc59f283ecd816a405"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "ad9e3d8f650687709fd68f4b90b41f7d825a365b02c23a636cef88ac2ac00c43"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "e0fb64b1085cc5538970158d05a009c24e276fb94e1a0bf6a528b48fbc4ff526"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "f0af56d2c5a48d60a4a5b5c903edfb7db3a736a94ed589d0b797df33ff9d3e1d"
+    },{
+      "account": "eosio",
+      "name": "activate",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "1eab748b95a2e6f4d7cb42065bdee5566af8efddf01a55a0a8d831b823f8828a"
+    }
+  ],
+  "transaction_extensions": [],
+  "signatures": [],
+  "context_free_data": []
+}
