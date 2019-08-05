@@ -14,15 +14,6 @@
           "permission": "active"
         }
       ],
-      "data": "0ec7e080177b2c02b278d5088611686b49d739925a92d9bfcacd7fc6b74053bd"
-    },{
-      "account": "eosio",
-      "name": "activate",
-      "authorization": [{
-          "actor": "eosio",
-          "permission": "active"
-        }
-      ],
       "data": "1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241"
     },{
       "account": "eosio",
@@ -105,15 +96,6 @@
         }
       ],
       "data": "f0af56d2c5a48d60a4a5b5c903edfb7db3a736a94ed589d0b797df33ff9d3e1d"
-    },{
-      "account": "eosio",
-      "name": "activate",
-      "authorization": [{
-          "actor": "eosio",
-          "permission": "active"
-        }
-      ],
-      "data": "1eab748b95a2e6f4d7cb42065bdee5566af8efddf01a55a0a8d831b823f8828a"
     }
   ],
   "transaction_extensions": [],
