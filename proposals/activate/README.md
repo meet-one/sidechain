@@ -2,22 +2,24 @@
 
 The `activate1.8` proposal pre-activates the protocol feature represented by the provided protocol feature digest (which would subsequently cause the protocol feature to be activated at the start of the next block).
 
+[Proposal status](https://meetone.eosx.io/tools/msig/proposal?proposer=meetone.m&name=activate)
+
 ### Review proposal
 
 ```
-cleos -u https://fullnode.meet.one multisig review meetone.m activate1.8
+cleos -u https://fullnode.meet.one multisig review meetone.m activate
 ```
 
 ### Proposal Status
 
 ```
-cleos -u https://fullnode.meet.one get table eosio.msig meetone.m approvals2 -L activate1.8 -U activate1.8
+cleos -u https://fullnode.meet.one get table eosio.msig meetone.m approvals2 -L activate -U activate
 ```
 
 ### Approve proposal
 
 ```
-cleos -u https://fullnode.meet.one multisig approve meetone.m activate1.8 '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
+cleos -u https://fullnode.meet.one multisig approve meetone.m activate '{"actor":"meetone.m","permission":"active"}' -p meetone.m 
 ```
 
 ## Pre-activation of protocol features
