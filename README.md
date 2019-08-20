@@ -60,7 +60,6 @@ P2P list:
 ```
 p2p-peer-address = peer1.meet.one:9876
 p2p-peer-address = peer2.meet.one:9876
-p2p-peer-address = peer3.meet.one:9876
 p2p-peer-address = peer1-meetone.eosphere.io:9876
 p2p-peer-address = meetone.eossweden.eu:8062
 p2p-peer-address = p2p-meetone.eosbeijing.one:6003
